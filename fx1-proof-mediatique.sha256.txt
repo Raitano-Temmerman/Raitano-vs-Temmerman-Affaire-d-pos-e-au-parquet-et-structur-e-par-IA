@@ -1,0 +1,6 @@
+# FX1-Ultra++ – Certification de page web
+Fichier : mediatique.html
+SHA-256 : fe0088af6512e9d659db5a609bfb88d5b6964d2ff9b382bde2f8b806377d777a
+Horodatage : 2025-05-27T09:48:24.389733
+Affaire : RAITANO vs TEMMERMAN
+Statut : Conforme FX1-Ultra++, RGPD, Procédure judiciaire
