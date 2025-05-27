@@ -1,6 +1,0 @@
-# FX1-Ultra++ – Certification de page web
-Fichier : mentions-legales.html
-SHA-256 : 25bcdd7ff12a6021a6918280ac37f9d5310218ee20a2f226b25e2bce579fe8fd
-Horodatage : 2025-05-27T09:41:17.571989
-Affaire : RAITANO vs TEMMERMAN
-Statut : Conforme FX1-Ultra++, RGPD, Procédure judiciaire
