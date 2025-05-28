@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -9,48 +10,156 @@
   <meta name="version" content="FX1-POURQUOI-v1.0 – 2025-05-26">
   <meta name="data-rgpd-content" content="true">
   <style>
-    footer {
-      background-color: #f2f2f2;
-      padding: 1em;
-      text-align: center;
-      font-size: 0.95em;
-      color: #333;
-      border-top: 1px solid #ccc;
+    :root {
+      --color-primary: #0057b7;
+      --color-hover: #003b82;
+      --color-accent: #e2f0ff;
+      --color-text: #222;
+      --font-family: 'Segoe UI', 'Roboto', sans-serif;
     }
-    footer a {
+
+    body {
+      display: flex;
+      margin: 0;
+      font-family: var(--font-family);
+      color: var(--color-text);
+      background-color: #fff;
+      line-height: 1.7;
+      font-size: 1.05em;
+    }
+
+    nav {
+      min-width: 220px;
+      background-color: #f4f6fa;
+      padding: 2em 1em;
+      height: 100vh;
+      position: sticky;
+      top: 0;
+      border-right: 1px solid #ccc;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5em;
+    }
+
+    nav strong {
+      font-size: 1rem;
+      color: #444;
+      font-weight: 600;
+      padding-bottom: 0.5em;
+      border-bottom: 1px solid #ddd;
+    }
+
+    nav a {
+      display: block;
+      color: var(--color-primary);
       text-decoration: none;
-      color: #007acc;
+      font-weight: 500;
+      transition: all 0.2s ease-in-out;
     }
-    footer a:hover {
+
+    nav a:hover {
+      color: var(--color-hover);
+      padding-left: 4px;
+    }
+
+    main {
+      padding: 2.5em 4em;
+      max-width: 960px;
+    }
+
+    header blockquote {
+      font-style: italic;
+      color: #444;
+      margin: 1.5rem 0 2rem 0;
+      padding-left: 1.25rem;
+      border-left: 5px solid #ccc;
+    }
+
+    section {
+      margin-bottom: 3em;
+    }
+
+    section h2 {
+      margin-bottom: 0.4em;
+      font-size: 1.6em;
+      border-bottom: 2px solid var(--color-accent);
+      padding-bottom: 0.3em;
+    }
+
+    ul {
+      padding-left: 1.2em;
+      margin-top: 0.6em;
+    }
+
+    li {
+      margin-bottom: 0.6em;
+    }
+
+    footer {
+      margin-top: 4em;
+      font-size: 0.9em;
+      text-align: center;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--color-primary);
+    }
+
+    a:hover {
       text-decoration: underline;
+      color: var(--color-hover);
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+      nav {
+        height: auto;
+        position: relative;
+        flex-direction: row;
+        overflow-x: auto;
+      }
+      nav a {
+        margin-right: 1em;
+      }
+      main {
+        padding: 1.5em;
+      }
     }
   </style>
 </head>
 <body>
+  <nav>
+    <strong>Navigation</strong>
+    <a href="index.html">🏠 Accueil du site</a>
+    <a href="mediatique.html">📚 Dossier médiatique</a>
+    <a href="certification.html">📄 Certification FX1</a>
+    <a href="mentions-legales.html">📑 Mentions légales</a>
+    <a href="pourquoi.html">🤖 Pourquoi ce site</a>
+  </nav>
   <main>
-    <section>
+    <header>
       <h1>Pourquoi ce site existe</h1>
-
+      <blockquote>“Ce site a été conçu pour garantir la lisibilité d’un conflit juridique réel, sans artifice.”</blockquote>
+    </header>
+    <section>
       <p>Ce site a été créé à la suite d’un litige locatif ayant donné lieu à un jugement civil (26 mai 2025) et à une plainte pénale déposée au parquet de Leuven (19 mai 2025), avec constitution de partie civile.</p>
-
       <p>Son objectif est exclusivement documentaire et juridique. Il permet de rendre accessibles les pièces, dépôts et événements liés à cette affaire, dans un cadre neutre, conforme au RGPD (article 6.1.e et f), sans commentaire, ni qualification, ni interprétation.</p>
-
       <p>Le contenu du site se limite à des documents produits ou déposés officiellement devant la justice belge. Aucune diffusion publique ou promotion n’a été réalisée. Aucun propos n’est dirigé contre la personne du bailleur en dehors du contenu judiciaire réel.</p>
-
       <p>Le site n’a pas vocation à porter atteinte à la réputation de quiconque. Il documente un conflit juridique non résolu sur le fond, et laisse à chacun la possibilité de consulter les faits de manière autonome.</p>
-
       <h2>🔐 Certification et sécurité FX1</h2>
       <p><strong>Empreinte SHA-256 :</strong> 8459a98dbce3b8e0dc37620749e5384b6acb4c9edc92e48c2db943874cbf22df</p>
       <p><strong>Version certifiée FX1 – conforme au protocole FX1-Ultra++</strong></p>
       <blockquote>
         Après vérification rigoureuse selon les critères FX1-Ultra++ adaptés à GPT-4o, cette page web est certifiée juridiquement irréprochable et strictement conforme à l’état actuel des procédures judiciaires civiles (jugement civil du 26 mai 2025) et pénales (plainte pénale du 19 mai 2025, en cours d'analyse judiciaire par le parquet de Leuven). La sécurité juridique, le respect absolu du RGPD et l’intégrité cryptographique ont été validés et attestés.
       </blockquote>
+      <p><a href="index.html">⬅ Retour à la page d’accueil</a></p>
     </section>
-
-    <p><a href="index.html">⬅ Retour à la page d’accueil</a></p>
+    <footer>
+      <p>🔏 <a href="certification.html">Certification FX1-Ultra++ – Archivage vérifié</a></p>
+    </footer>
   </main>
-  <footer>
-    <p>🔏 <a href="certification.html">Certification FX1-Ultra++ – Archivage vérifié</a></p>
-  </footer>
 </body>
 </html>
