@@ -1,0 +1,23 @@
+FX1 – CERTIFICATION TECHNIQUE – sitemap-FINAL.xml
+
+Ce document confirme que le fichier sitemap-FINAL.xml est conforme au standard FX1 V3.3.2+, destiné à l’indexation légale et transparente du site :
+
+https://raitano-temmerman.github.io/Raitano-vs-Temmerman-Affaire-d-pos-e-au-parquet-et-structur-e-par-IA/
+
+Détails techniques :
+– Type de fichier : XML
+– Format conforme à : https://www.sitemaps.org/protocol.html
+– Langues couvertes : fr, de, en, nl, it
+– Nombre d’URLs : 11
+– Fichiers inclus : index, mediatique, certification, mentions, pourquoi, bascule, et traductions FX1
+
+Empreinte SHA-256 :
+bc32f56ed9990dba3db6cfed1e0d42880b40a230da871337e38b52c7335d85b6
+
+UID principal de référence : fx1trad-bascule-FR-V3.3.2plus-20250530-001
+
+Date de génération : 2025-05-30T16:13:26.910152 UTC
+Auteur : Stefan Raitano
+Licence : FX1 – Open Documentation, reproduction autorisée avec citation.
+
+Ce fichier peut être annexé à toute publication GitHub, archive judiciaire, ou usage officiel nécessitant une preuve d’antériorité technique.
