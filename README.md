@@ -1,1 +1,0 @@
-SHA256 (bascule-FX1-final-scenarise.html) = 6a63b5fd330c76c366c1e9afa459b61ec721fd64de33d20d832bd05e5ffb6409
