@@ -1,406 +1,226 @@
 
 <!DOCTYPE html>
-
 <html lang="fr">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>
-   La bascule – Une justice pour tous (Phase 1/3)
-  </title>
-<meta content="Présentation certifiée FX1 de la bascule dans l'affaire Raitano vs Temmerman – Plainte pénale, dossier probatoire, transparence procédurale." name="description"/>
-<meta content="index, follow" name="robots"/>
-<meta content="bascule judiciaire, plainte pénale, dossier R vs T, justice belge, RGPD, FX1, transparence IA" name="keywords">
-<meta content="Raitano – Documentation FX1 IA" name="author"/>
-<meta content="FX1-V3.3.2plus-2025-05-30" name="version"/>
-<meta content="fx1trad-bascule-FR-V3.3.2plus-20250530-001" name="fx1-uid"/>
-<meta content="sha256-da512484d1381e6311cc2851684fead986c52f2a163a3374b401600d0ccc9e1a" name="fx1-hash"/>
-<meta content="true" name="data-rgpd-content"/>
-<meta content="#0057b7" name="theme-color"/>
-<link href="https://raitano-temmerman.github.io/bascule.html" rel="canonical"/>
-</meta>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>La bascule – Une justice pour tous (Phase 1/3)</title>
+  <meta name="description" content="Présentation certifiée FX1 de la bascule dans l'affaire Raitano vs Temmerman – Plainte pénale, dossier probatoire, transparence procédurale.">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="bascule judiciaire, plainte pénale, dossier R vs T, justice belge, RGPD, FX1, transparence IA">
+  <meta name="author" content="Raitano – Documentation FX1 IA">
+  <meta name="version" content="FX1-V3.3.2plus-2025-05-30">
+  <meta name="fx1-uid" content="fx1trad-bascule-FR-V3.3.2plus-20250530-001">
+  <meta name="fx1-hash" content="da512484d1381e6311cc2851684fead986c52f2a163a3374b401600d0ccc9e1a">
+  <meta name="data-rgpd-content" content="true">
+  <meta name="theme-color" content="#0057b7">
+  <link rel="canonical" href="https://raitano-temmerman.github.io/bascule.html">
+
+  <style>
+    /* ici votre CSS */
+  </style>
+</head>
+
+    :root {
+      --color-primary: #0057b7;
+      --color-hover: #003b82;
+      --color-accent: #e2f0ff;
+      --color-text: #222;
+      --font-family: 'Segoe UI', 'Roboto', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-family);
+      color: var(--color-text);
+      background-color: #fff;
+      line-height: 1.7;
+      font-size: 1.05em;
+    }
+
+    .lang-menu {
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+      padding: 1em;
+      background: #f4f6fa;
+      border-bottom: 2px solid #e2e8f0;
+      font-size: 0.95em;
+    }
+
+    .lang-menu a {
+      color: var(--color-primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .lang-menu a:hover {
+      color: var(--color-hover);
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2em;
+    }
+
+    section {
+      background-color: #f9fbff;
+      padding: 1.5em 2em;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+      margin-bottom: 2em;
+    }
+
+    section h2 {
+      font-size: 1.6em;
+      color: #333;
+      border-bottom: 2px solid var(--color-accent);
+      padding-bottom: 0.3em;
+      margin-top: 0;
+    }
+
+    footer {
+      font-size: 0.9em;
+      text-align: center;
+      background-color: #f8f9fa;
+      padding: 1.5em;
+      border-top: 2px solid #e2e8f0;
+      border-radius: 8px;
+      margin-top: 4em;
+    }
+
+    p, li {
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+    }
+
+    ul {
+      padding-left: 1.2em;
+    }
+
+    a {
+      color: var(--color-primary);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .lang-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      main {
+        padding: 1.5em;
+      }
+    }
+  </style>
 </head>
 <body>
-<style>
-   :root {
-    --color-primary: #0057b7;
-    --color-hover: #003b82;
-    --color-accent: #e2f0ff;
-    --color-text: #222;
-    --font-family: 'Segoe UI', 'Roboto', sans-serif;
-  }
-  body {
-    display: flex;
-    margin: 0;
-    font-family: var(--font-family);
-    color: var(--color-text);
-    background-color: #fff;
-    line-height: 1.7;
-    font-size: 1.05em;
-  }
-  nav {
-    min-width: 220px;
-    background-color: #f4f6fa;
-    padding: 2em 1em;
-    height: 100vh;
-    position: sticky;
-    top: 0;
-    border-right: 1px solid #ccc;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5em;
-  }
-  nav strong {
-    font-size: 1rem;
-    color: #444;
-    font-weight: 600;
-    padding-bottom: 0.5em;
-    border-bottom: 1px solid #ddd;
-  }
-  nav a {
-    display: block;
-    color: var(--color-primary);
-    text-decoration: none;
-    font-weight: 500;
-    transition: all 0.2s ease-in-out;
-  }
-  nav a:hover {
-    color: var(--color-hover);
-    padding-left: 4px;
-  }
-  main {
-    padding: 2.5em 4em;
-    max-width: 960px;
-  }
-  section {
-    margin-bottom: 3em;
-  }
-  section h2 {
-    margin-bottom: 0.4em;
-    font-size: 1.6em;
-    border-bottom: 2px solid var(--color-accent);
-    padding-bottom: 0.3em;
-  }
-  footer {
-    margin-top: 4em;
-    font-size: 0.9em;
-    text-align: center;
-  }
-  a {
-    text-decoration: none;
-    color: var(--color-primary);
-  }
-  a:hover {
-    text-decoration: underline;
-    color: var(--color-hover);
-  }
-  @media (max-width: 768px) {
-    body {
-      flex-direction: column;
-    }
-    nav {
-      height: auto;
-      position: relative;
-      flex-direction: row;
-      overflow-x: auto;
-    }
-    nav a {
-      margin-right: 1em;
-    }
-    main {
-      padding: 1.5em;
-    }
-  }
-  </style>
-<!-- Menu multilingue -->
-<div style="background: #f9f9f9; padding: 1em; border-radius: 8px; width: fit-content; box-shadow: 0 0 6px rgba(0,0,0,0.1); margin-bottom: 1em;">
-<p>
-<a href="bascule.html">
-     Français
-     <small>
-      FR
-     </small>
-</a>
-</p>
-<p>
-<a href="bascule-nl.html">
-     Nederlands
-     <small>
-      BE
-     </small>
-</a>
-</p>
-<p>
-<a href="bascule-en.html">
-     English
-     <small>
-      GB
-     </small>
-</a>
-</p>
-<p>
-<a href="bascule-de.html">
-     Deutsch
-     <small>
-      DE
-     </small>
-</a>
-</p>
-<p>
-<a href="bascule-it.html">
-     Italiano
-     <small>
-      IT
-     </small>
-</a>
-</p>
-</div>
-<nav>
-<strong>
-    Navigation
-   </strong>
-<a href="index.html">
-    🏠 Accueil du site
-   </a>
-<a href="mediatique.html">
-    📚 Dossier médiatique
-   </a>
-<a href="certification.html">
-    📄 Certification FX1
-   </a>
-<a href="mentions-legales.html">
-    📑 Mentions légales
-   </a>
-<a href="bascule.html">
-    💡 La bascule – Une justice pour tous
-   </a>
-</nav>
-<main>
 
-<h2 style="color: #333; margin-top: 1em;">
-    🔎 Phase 1/3 – En attente de suite documentée (plainte pénale en cours)
-   </h2>
-<section style="background-color: #f9fbff; padding: 1.5em 2em; border-radius: 12px; box-shadow: 0 3px 8px rgba(0,0,0,0.05); margin-bottom: 2em;">
-<p>
-<strong>
-      💡 Se défendre appartient désormais à tous – sans avocat, sans barrière, sans exclusion
-     </strong>
-</p>
-<p>
-     Ce site prouve qu’il est désormais possible de mener un combat juridique complet – civil et pénal – seul, sans avocat, sans expertise préalable, simplement avec une méthodologie rigoureuse et l’assistance d’une IA certifiée FX1.
+  <!-- Bandeau multilingue -->
+  <div class="lang-menu">
+    <a href="fx1trad-index-fr.html">Français 🇫🇷</a>
+    <a href="fx1trad-index-nl.html">Nederlands 🇧🇪</a>
+    <a href="fx1trad-index-en.html">English 🇬🇧</a>
+    <a href="fx1trad-index-de.html">Deutsch 🇩🇪</a>
+    <a href="fx1trad-index-it.html">Italiano 🇮🇹</a>
+  </div>
+
+  <main>
+    <h2>🔎 Phase 1/3 – En attente de suite documentée (plainte pénale en cours)</h2>
+
+    <section>
+      <p><strong>💡 Se défendre appartient désormais à tous – sans avocat, sans barrière, sans exclusion</strong></p>
+      <p>Ce site prouve qu’il est désormais possible de mener un combat juridique complet – civil et pénal – seul, sans avocat, sans expertise préalable, simplement avec une méthodologie rigoureuse et l’assistance d’une IA certifiée FX1.</p>
+    </section>
+
+    <section>
+      <h2>Trois piliers : Procédure, Preuves, Possibilité</h2>
+      <ul>
+        <li>📁 <strong>Procédure réelle</strong> : toutes les étapes ont été suivies, du dépôt civil à la plainte pénale.</li>
+        <li>🧾 <strong>Preuves vérifiables</strong> : chaque document est archivé, horodaté, indexé.</li>
+        <li>🤖 <strong>Possibilité pour tous</strong> : vous n’avez pas besoin d’un avocat pour comprendre, agir et protéger vos droits.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Le lien entre témoignage et démonstration</h2>
+      <p>Le témoignage personnel ne remplace pas le dossier juridique. Mais il montre qu’un citoyen seul peut aujourd’hui faire ce qu’un cabinet ferait hier. Il peut produire, organiser, déposer, documenter, défendre.</p>
+    </section>
+
+    <section>
+      <h2>Le droit devient accessible</h2>
+      <p>Cette page est une bascule. Entre un monde où la justice est réservée aux initiés… et un monde où elle s’ouvre, sans intermédiaire, avec intégrité, structure, et accès public.</p>
+      <p>Le dossier judiciaire complet est désormais structuré, archivé et accessible aux juridictions compétentes. Aucune information ne peut être publiée sans atteinte au contradictoire ou au principe de neutralité.</p>
+      <p>Cette démarche n’est pas une exception. Elle est le signe qu’un basculement est en cours : celui d’une justice qui devient réellement accessible, vérifiable, et compatible avec l’ère numérique et les droits fondamentaux des citoyens.</p>
+    </section>
+
+    <section>
+      <p><a href="index.html">← Revenir à l’affaire judiciaire</a> | <a href="mediatique.html">📚 Voir les preuves</a></p>
+      <p><em>Tout citoyen peut, comme ici, structurer un dossier, constituer des preuves, et suivre une procédure sans intermédiaire. Ce site est un exemple reproductible, pas un cas isolé.</em></p>
+      <p>🔏 <strong>Certification FX1-Ultra++ – Archivage vérifié</strong></p>
+    </section>
+
+    <section>
+      <h2>🕊️ Une démarche progressive, dans le respect de la justice</h2>
+      <p>Ce n’est que le début.</p>
+      <p>Toutes les pièces, y compris les éléments de plaidoirie, les preuves matérielles, et la plainte pénale complète, seront progressivement transmises et publiées.</p>
+      <p>L’objectif est que demain, chacun puisse accéder à l’intégralité d’un dossier judiciaire structuré, et constater que la justice appartient à tous.</p>
+      <p>Mais pour l’instant, et par respect des institutions ainsi que de la procédure pénale en cours, je ne dépasserai pas les étapes prévues. Ce site avance dans un cadre strictement légal, en phase avec le déroulement des enquêtes et des délibérations en cours.</p>
+    </section>
+
+    <div style="background: #f4f4f4; padding: 1em; border-left: 4px solid #0057b7;">
+      <p><strong>📌 Étape actuelle :</strong> Cette page présente les premières bases vérifiables d'une affaire réelle, en conformité avec le dépôt au parquet (19 mai 2025) et le jugement civil (26 mai 2025).</p>
+      <p><strong>🔄 Suite attendue :</strong> Les éléments complémentaires seront publiés progressivement, sous contrôle juridique et selon l’évolution procédurale.</p>
+      <p><strong>🕓 Mise à jour attendue :</strong> après transmission officielle au parquet des pièces supplémentaires attendues (phase 2/3), sous contrôle légal.</p>
+      <p><em>🕊️ Objectif : transparence et accès au droit, dans une logique de documentation citoyenne, non accusatoire.</em></p>
+    </div>
+
+    <p style="margin-top: 1em; font-style: italic; color: #444;">
+      🔜 La phase 2 comprendra la publication certifiée de pièces clés et l’explication du lien entre les infractions visées, les preuves déposées, et les implications pour l’État de droit.
+      <br/>📬 Pour être informé(e), consultez régulièrement ce site ou son équivalent archivé.
     </p>
-</section>
-<section style="background-color: #f9fbff; padding: 1.5em 2em; border-radius: 12px; box-shadow: 0 3px 8px rgba(0,0,0,0.05); margin-bottom: 2em;">
-<h2>
-     Trois piliers : Procédure, Preuves, Possibilité
-    </h2>
-<ul>
-<li>
-      📁
-      <strong>
-       Procédure réelle
-      </strong>
-      : toutes les étapes ont été suivies, du dépôt civil à la plainte pénale.
-     </li>
-<li>
-      🧾
-      <strong>
-       Preuves vérifiables
-      </strong>
-      : chaque document est archivé, horodaté, indexé.
-     </li>
-<li>
-      🤖
-      <strong>
-       Possibilité pour tous
-      </strong>
-      : vous n’avez pas besoin d’un avocat pour comprendre, agir et protéger vos droits.
-     </li>
-</ul>
-</section>
-<section style="background-color: #f9fbff; padding: 1.5em 2em; border-radius: 12px; box-shadow: 0 3px 8px rgba(0,0,0,0.05); margin-bottom: 2em;">
-<h2>
-     Le lien entre témoignage et démonstration
-    </h2>
-<p>
-     Le témoignage personnel ne remplace pas le dossier juridique. Mais il montre qu’un citoyen seul peut aujourd’hui faire ce qu’un cabinet ferait hier. Il peut produire, organiser, déposer, documenter, défendre.
-    </p>
-</section>
-<section style="background-color: #f9fbff; padding: 1.5em 2em; border-radius: 12px; box-shadow: 0 3px 8px rgba(0,0,0,0.05); margin-bottom: 2em;">
-<h2>
-     Le droit devient accessible
-    </h2>
-<p>
-     Cette page est une bascule. Entre un monde où la justice est réservée aux initiés… et un monde où elle s’ouvre, sans intermédiaire, avec intégrité, structure, et accès public.
-    </p>
-<p>
-     Le dossier judiciaire complet est désormais structuré, archivé et accessible aux juridictions compétentes. Aucune information ne peut être publiée sans atteinte au contradictoire ou au principe de neutralité.
-    </p>
-<p>
-     Cette démarche n’est pas une exception. Elle est le signe qu’un basculement est en cours : celui d’une justice qui devient réellement accessible, vérifiable, et compatible avec l’ère numérique et les droits fondamentaux des citoyens.
-    </p>
-</section>
-<section style="background-color: #f9fbff; padding: 1.5em 2em; border-radius: 12px; box-shadow: 0 3px 8px rgba(0,0,0,0.05); margin-bottom: 2em;">
-<p>
-<a href="index.html">
-      ← Revenir à l’affaire judiciaire
-     </a>
-     |
-     <a href="mediatique.html">
-      📚 Voir les preuves
-     </a>
-</p>
-<p>
-<em>
-      Tout citoyen peut, comme ici, structurer un dossier, constituer des preuves, et suivre une procédure sans intermédiaire. Ce site est un exemple reproductible, pas un cas isolé.
-     </em>
-</p>
-<p>
-     🔏
-     <strong>
-      Certification FX1-Ultra++ – Archivage vérifié
-     </strong>
-</p>
-</section>
-<section style="background-color: #f9fbff; padding: 1.5em 2em; border-radius: 12px; box-shadow: 0 3px 8px rgba(0,0,0,0.05); margin-bottom: 2em;">
-<h2>
-     🕊️ Une démarche progressive, dans le respect de la justice
-    </h2>
-<p>
-     Ce n’est que le début.
-    </p>
-<p>
-     Toutes les pièces, y compris les éléments de plaidoirie, les preuves matérielles, et la plainte pénale complète, seront progressivement transmises et publiées.
-    </p>
-<p>
-     L’objectif est que demain, chacun puisse accéder à l’intégralité d’un dossier judiciaire structuré, et constater que la justice appartient à tous.
-    </p>
-<p>
-     Mais pour l’instant, et par respect des institutions ainsi que de la procédure pénale en cours, je ne dépasserai pas les étapes prévues. Ce site avance dans un cadre strictement légal, en phase avec le déroulement des enquêtes et des délibérations en cours.
-    </p>
-</section>
-<div style="padding: 1em; background-color: #f4f4f4; border-left: 4px solid #0057b7; margin-top: 2em;">
-<p>
-<strong>
-      📌 Étape actuelle :
-     </strong>
-     Cette page présente les premières bases vérifiables d'une affaire réelle, en conformité avec le dépôt au parquet (19 mai 2025) et le jugement civil (26 mai 2025).
-    </p>
-<p>
-<strong>
-      🔄 Suite attendue :
-     </strong>
-     Les éléments complémentaires seront publiés progressivement, sous contrôle juridique et selon l’évolution procédurale. Le public et les parties concernées peuvent donc s’attendre à un élargissement documenté et rigoureux de cette documentation, dans le respect de toutes les garanties légales.
-    </p>
-<p>
-<strong>
-      🕓 La prochaine mise à jour est prévue après transmission officielle au parquet des pièces supplémentaires attendues (phase 2/3), sous contrôle légal.
-     </strong>
-</p>
-<p>
-<em>
-      🕊️ L’objectif reste de contribuer à la transparence et à l’accès au droit, dans une logique de documentation citoyenne, non accusatoire.
-     </em>
-</p>
-</div>
-<p style="margin-top: 1em; font-style: italic; color: #444;">
-    🔜 La phase 2 comprendra la publication certifiée de pièces clés et l’explication du lien entre les infractions visées, les preuves déposées, et les implications pour l’État de droit.
-    <br/>
-    📬 Pour être informé(e) des mises à jour, consultez régulièrement ce site ou son équivalent archivé.
-   </p>
-<div style="margin-top: 3em; padding: 1em; background: #f1f7ff; border-left: 5px solid #0057b7;">
-<p>
-     📢
-     <strong>
-      Nombre croissant de visiteurs
-     </strong>
-     : Depuis la publication initiale, plusieurs centaines de personnes ont consulté ce site, témoignant d’un intérêt public réel pour la compréhension directe d’une affaire judiciaire structurée.
-    </p>
-<p>
-     💬 Des citoyens, des juristes et des médias spécialisés attendent la suite des publications, dans un objectif de transparence et d’accès au droit. Ce processus sera poursuivi avec la même rigueur, dans le strict respect du cadre légal.
-    </p>
-</div>
-<p>
-<a href="phase2.html">
-     🔜 Voir la prochaine étape (phase 2/3) – Mise à jour prévue
-    </a>
-</p>
-<div style="margin-top: 2em; background: #fff3cd; padding: 1em; border-left: 5px solid #ffc107;">
-<p>
-     ⚠️
-     <strong>
-      Transparence sous vigilance
-     </strong>
-     : toute tentative de pression, représaille, ou demande de retrait non justifiée sera archivée, signalée, et documentée comme atteinte à l’information d’intérêt public.
-    </p>
-</div>
-<div style="margin-top: 2em; background: #e6f0ff; padding: 1em; border-left: 5px solid #0057b7;">
-<p>
-     ⏳
-     <strong>
-      Attente collective
-     </strong>
-     : Plusieurs lecteurs, juristes, observateurs et citoyens ont signalé leur intérêt pour la suite de cette affaire. La phase 2/3 est déjà structurée en interne, et sa publication interviendra dès que les conditions légales seront remplies.
-    </p>
-<p>
-     📅 Cette progression est volontairement encadrée par un calendrier procédural, afin d’éviter toute interférence ou précipitation nuisible à l’équilibre judiciaire. Le principe de rigueur l’emporte sur la rapidité.
-    </p>
-</div>
-<div style="margin-top: 2em; background: #d8f5ff; padding: 1em; border-left: 5px solid #0099cc;">
-<p>
-     📣
-     <strong>
-      Et après ?
-     </strong>
-     La suite est prête. Mais chaque publication est pensée, vérifiée, contrôlée. Ce site ne se contente pas de dénoncer – il démontre, étape par étape.
-    </p>
-<p>
-     👁️‍🗨️ Des avocats, journalistes, citoyens, étudiants en droit et victimes de situations similaires attendent cette suite. Elle arrivera. Et elle sera irréfutable.
-    </p>
-</div>
-</main>
-<footer style="margin-top: 4em; font-size: 0.9em; text-align: center; background-color: #f8f9fa; padding: 1em; border-top: 2px solid #e2e8f0; border-radius: 8px;">
-<p style="margin-bottom: 0.2em;">
-<strong>
-     © 2025
-    </strong>
-    – Site structuré par IA selon le standard
-    <strong>
-     FX1
-    </strong>
-<br/>
-     Conforme
-     <abbr title="Règlement Général sur la Protection des Données">
-      RGPD
-     </abbr>
-     ,
-     <abbr title="Artificial Intelligence Act">
-      AI Act
-     </abbr>
-     ,
-     <abbr title="Convention européenne des droits de l’homme">
-      CEDH
-     </abbr>
-     .
-    
-   </p>
-<p style="font-size: 0.95em; color: #555;">
-    🆔 UID :
-    <code>
-     fx1trad-bascule-FR-V3.3.2plus-20250530-001
-    </code>
-</p>
-<p style="font-size: 0.9em; color: #555;">
-    📖 Conformément à l’article 6.1.f du RGPD et à l’article 10 de la CEDH, la documentation en ligne est fondée sur un intérêt légitime à l’information, dans le cadre d’un litige réel et documenté.
-   </p>
-<p style="font-size: 0.9em; color: #555;">
-    📖 Conformément à l’article 6.1.f du RGPD et à la CEDH, le droit d’informer le public dans une affaire réelle autorise la publication progressive de pièces, dès lors que celles-ci sont exactes, horodatées et neutres.
-   </p>
-<p style="font-size: 0.85em; color: #555;">
-    🗂️ Cette page est certifiée FX1 – Toute version archivée (SHA-256) fait foi.
-    <br/>
-    📦 La phase 2/3 est déjà datée, chiffrée, et prête à publication selon les délais procéduraux.
-   </p>
-</footer>
+
+    <div style="margin-top: 2em; background: #f1f7ff; padding: 1em; border-left: 5px solid #0057b7;">
+      <p>📢 <strong>Nombre croissant de visiteurs :</strong> plusieurs centaines de personnes ont consulté ce site, témoignant d’un intérêt public réel.</p>
+      <p>💬 Des citoyens, des juristes et des médias attendent la suite des publications dans le respect du cadre légal.</p>
+    </div>
+
+    <p><a href="phase2.html">🔜 Voir la prochaine étape (phase 2/3)</a></p>
+
+    <div style="margin-top: 2em; background: #fff3cd; padding: 1em; border-left: 5px solid #ffc107;">
+      <p>⚠️ <strong>Transparence sous vigilance :</strong> toute tentative de pression ou retrait injustifié sera archivée, signalée, et documentée.</p>
+    </div>
+
+    <div style="margin-top: 2em; background: #e6f0ff; padding: 1em; border-left: 5px solid #0057b7;">
+      <p>⏳ <strong>Attente collective :</strong> juristes, citoyens et observateurs attendent la publication de la phase 2/3.</p>
+      <p>📅 Cette progression est volontairement encadrée par le calendrier procédural.</p>
+    </div>
+
+    <div style="margin-top: 2em; background: #d8f5ff; padding: 1em; border-left: 5px solid #0099cc;">
+      <p>📣 <strong>Et après ?</strong> La suite est prête. Mais chaque publication est pensée, vérifiée, contrôlée.</p>
+      <p>👁️‍🗨️ Des avocats, journalistes, citoyens, étudiants en droit et victimes de situations similaires attendent cette suite. Elle arrivera. Et elle sera irréfutable.</p>
+    </div>
+
+  </main>
+
+  <footer>
+    <p><strong>© 2025</strong> – Site structuré par IA selon le standard <strong>FX1</strong><br/>
+    Conforme <abbr title="Règlement Général sur la Protection des Données">RGPD</abbr>,
+    <abbr title="Artificial Intelligence Act">AI Act</abbr>,
+    <abbr title="Convention européenne des droits de l’homme">CEDH</abbr>.</p>
+    <p style="font-size: 0.95em; color: #555;">🆔 UID : <code>fx1trad-bascule-FR-V3.3.2plus-20250530-001</code></p>
+    <p style="font-size: 0.9em; color: #555;">📖 Publication conforme à l’article 6.1.f du RGPD et à l’article 10 de la CEDH : intérêt légitime à l'information dans le cadre d’un litige réel et documenté.</p>
+    <p style="font-size: 0.9em; color: #555;">📰 Droit d’informer le public sur une affaire réelle : publication progressive autorisée dès lors que les contenus sont exacts, horodatés et neutres.</p>
+    <p style="font-size: 0.85em; color: #555;">🗂️ Cette page est certifiée FX1. Toute version archivée (empreinte SHA-256) fait foi.<br/>
+    📦 La phase 2/3 est déjà datée, chiffrée et prête à publication conforme aux délais procéduraux.</p>
+  </footer>
+
 </body>
 </html>
