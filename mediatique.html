@@ -70,44 +70,191 @@
     }
   }
   </script>
-<style>
-    body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #ffffff; color: #222; line-height: 1.7; }
-    nav { background: #eef3f7; padding: 1.5em; border-right: 2px solid #ccc; height: 100vh; width: 240px; position: fixed; top: 0; left: 0; overflow-y: auto; }
-    nav strong { display: block; font-size: 1.1em; margin-bottom: 1em; }
-    nav a { display: block; margin: 0.6em 0; color: #0057b7; text-decoration: none; font-weight: 600; }
-    nav a:hover { text-decoration: underline; }
-    main { margin-left: 260px; padding: 2em 3em; max-width: 900px; }
-    h2 { font-size: 1.6em; border-bottom: 2px solid #e2f0ff; padding-bottom: 0.3em; }
-    h3 { margin-top: 1.5em; color: #0c2d57; }
-    footer { margin-top: 3em; padding: 2em 1em; font-size: 0.9em; text-align: center; color: #666; background: #f9f9f9; border-top: 1px solid #ddd; }
-    code { background: #f1f5f9; padding: 2px 4px; border-radius: 4px; }
+  <style>
+   :root {
+      --color-primary: #0057b7;
+      --color-hover: #003b82;
+      --color-accent: #e2f0ff;
+      --color-text: #222;
+      --font-family: 'Segoe UI', 'Roboto', sans-serif;
+    }
+    body {
+      display: flex;
+      margin: 0;
+      font-family: var(--font-family);
+      color: var(--color-text);
+      background-color: #fff;
+      line-height: 1.7;
+      font-size: 1.05em;
+    }
+    nav {
+      min-width: 220px;
+      background-color: #f4f6fa;
+      padding: 2em 1em;
+      height: 100vh;
+      position: sticky;
+      top: 0;
+      border-right: 1px solid #ccc;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5em;
+    }
+    nav strong {
+      font-size: 1rem;
+      color: #444;
+      font-weight: 600;
+      padding-bottom: 0.5em;
+      border-bottom: 1px solid #ddd;
+    }
+    nav a {
+      display: block;
+      color: var(--color-primary);
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.2s ease-in-out;
+      margin-bottom: 0.5em;
+    }
+    nav a:hover {
+      color: var(--color-hover);
+      padding-left: 4px;
+    }
+    nav div.lang-menu {
+      text-align: right;
+      margin-bottom: 10px;
+      font-size: 0.9em;
+      background: #f9f9f9;
+      padding: 0.5em;
+      border-radius: 6px;
+      box-shadow: 0 0 4px rgba(0,0,0,0.1);
+    }
+    nav div.lang-menu a {
+      margin-left: 0.6em;
+      color: var(--color-primary);
+      text-decoration: none;
+    }
+    main {
+      padding: 2.5em 4em;
+      max-width: 960px;
+      flex-grow: 1;
+    }
+    section {
+      margin-bottom: 3em;
+    }
+    section h2 {
+      margin-bottom: 0.4em;
+      font-size: 1.6em;
+      border-bottom: 2px solid var(--color-accent);
+      padding-bottom: 0.3em;
+    }
+    footer {
+      margin-top: 4em;
+      font-size: 0.9em;
+      text-align: center;
+    }
   </style>
-</head>
-
-<body>
-<!-- FX1: Bloc multilingue standard – Début -->
-<nav id="lang-menu">
-  🌐
-  <a href="mediatique-html" hreflang="fr" lang="fr">Français</a>
-  <a href="mediatique.nl.html" hreflang="nl" lang="nl">Nederlands</a>
-  <a href="mediatique-en.html" hreflang="en" lang="en">English</a>
-  <a href="mediatique-de.html" hreflang="de" lang="de">Deutsch</a>
-  <a href="mediatique-it.html" hreflang="it" lang="it">Italiano</a>
-
-  <hr style="border: none; border-top: 1px solid #ccc; margin: 1em 0;" />
-
-  <strong>📂 Navigatie</strong>
-  <a href="index.html">🏠 Accueil du site</a>
-  <a href="mediatique.html">📚 Dossier médiatique</a>
-  <a href="certification.html">📄 Certification FX1</a>
-  <a href="mentions-legales.html">📑 Mentions légales</a>
-  <a href="bascule.html">💡 La bascule – Une justice pour tous</a>
-</nav>
-
-<!-- FX1: Bloc multilingue standard – Fin -->
-
+  <script type="application/ld+json">
+   {
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "name": "FX1 – Page certifiée médiatique – FR – V3.3.2+",
+  "version": "FX1-V3.3.2+",
+  "author": {
+    "@type": "Person",
+    "name": "Stefan Raitano"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "FX1 Documentation",
+    "url": "https://raitano-temmerman.github.io"
+  },
+  "datePublished": "2025-05-30",
+  "inLanguage": "fr",
+  "mainEntityOfPage": "https://raitano-temmerman.github.io/fx1trad-mediatique-fr.html",
+  "translationOfWork": {
+    "@type": "TechArticle",
+    "inLanguage": "fr",
+    "url": "https://raitano-temmerman.github.io/mediatique.html",
+    "headline": "Affaire judiciaire – Dossier médiatique FX1",
+    "description": "Version certifiée FX1 conforme RGPD, AI Act 2024 et CEDH, traduite ou adaptée à la diffusion multilingue."
+  },
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "FX1-UID",
+    "value": "fx1trad-mediatique-fr.html"
+  }
+}
+  </script>
+ </head>
+ <body>
+  <nav>
+   <div style="background: #f9f9f9; padding: 1em; border-radius: 8px; width: fit-content; box-shadow: 0 0 6px rgba(0,0,0,0.1); margin-bottom: 1em;">
+   <p>
+    <a href="fx1trad-index-fr.html" style="color: #0057b7; font-weight: 500; text-decoration: none;">
+     
+     <small>
+      FR
+     </small>
+    </a>
+   </p>
+   <p>
+    <a href="fx1trad-index-nl.html" style="color: #0057b7; font-weight: 500; text-decoration: none;">
+     
+     <small>
+      Ned
+     </small>
+    </a>
+   </p>
+   <p>
+    <a href="fx1trad-index-en.html" style="color: #0057b7; font-weight: 500; text-decoration: none;">
+    
+     <small>
+      GB
+     </small>
+    </a>
+   </p>
+   <p>
+    <a href="fx1trad-index-de.html" style="color: #0057b7; font-weight: 500; text-decoration: none;">
+     
+     <small>
+      DE
+     </small>
+    </a>
+   </p>
+   <p>
+    <a href="fx1trad-index-it.html" style="color: #0057b7; font-weight: 500; text-decoration: none;">
+     
+     <small>
+      IT
+     </small>
+    </a>
+   </p>
+  </div>
+   <strong>
+    Navigation
+   </strong>
+   <a href="index.html">
+    🏠 Accueil du site
+   </a>
+   <a href="mediatique.html">
+    📚 Dossier médiatique
+   </a>
+   <a href="certification.html">
+    📄 Certification FX1
+   </a>
+   <a href="mentions-legales.html">
+    📑 Mentions légales
+   </a>
+   <a href="pourquoi.html">
+    🤖 Pourquoi ce site
+   </a>
+  </nav>
   <main>
-   
+   <p>
+   </p>
+   <p>
+   </p>
+   <p>
+   </p>
    <h1 style="font-family: 'Inter', sans-serif; font-size: 2.5rem; margin-bottom: 1rem; padding: 1rem 1.5rem; border-radius: 12px; background-color: #0f172a; color: #f1f5f9; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
     RAITANO – FX1 / Informations judiciaires complémentaires
    </h1>
