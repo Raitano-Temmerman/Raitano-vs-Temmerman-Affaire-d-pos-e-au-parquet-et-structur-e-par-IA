@@ -34,24 +34,176 @@
   <meta property="og:locale:alternate" content="it_IT"/>
   <meta property="og:image" content="/img/fx1-preview.jpg"/>
 
-  <link rel="icon" href="/favicon.ico"/>
-
-  <!-- CSS -->
+<!-- 🔐 Intégrité cryptographique SHA-256 -->
+  <meta name="fx1-hash" content="865239c866bfaba97c7ba223b31c0f4b77c1369b8189359b9c16d02aefa9263e" /> 
+  
+  <meta content="Double validation croisée : GPT-4o + DeepL + dictionnaire juridique + lecture inversée multilingue (FR↔FR)" name="fx1-supervision-method"/>
+  <meta content="fr" name="dc.language"/>
+  <meta content="Stefan Raitano" name="dc.creator"/>
+  <meta content="Index certifié FX1 – FR – V3.3.2" name="dc.title"/>
+  <meta content="FX1 – Open Documentation, diffusion autorisée avec mention" name="dc.rights"/>
+  <meta content="FX1 – Index certifié FR – V3.3.2+" property="og:title"/>
+  <meta content="Affaire judiciaire réelle documentée selon les normes FX1, RGPD, AI Act 2024 et CEDH." property="og:description"/>
+  <meta content="https://raitano-temmerman.github.io/fx1trad-index-fr.html" property="og:url"/>
+  <meta content="fr_FR" property="og:locale"/>
+  <meta content="de_DE" property="og:locale:alternate"/>
+  <meta content="en_US" property="og:locale:alternate"/>
+  <meta content="nl_NL" property="og:locale:alternate"/>
+  <meta content="it_IT" property="og:locale:alternate"/>
+  <link href="https://raitano-temmerman.github.io/index.html" rel="canonical"/>
+  <link href="https://raitano-temmerman.github.io/fx1trad-index-fr.html" hreflang="fr" rel="alternate"/>
+  <link href="https://raitano-temmerman.github.io/fx1trad-index-de.html" hreflang="de" rel="alternate"/>
+  <link href="https://raitano-temmerman.github.io/fx1trad-index-en.html" hreflang="en" rel="alternate"/>
+  <link href="https://raitano-temmerman.github.io/fx1trad-index-nl.html" hreflang="nl" rel="alternate"/>
+  <link href="https://raitano-temmerman.github.io/fx1trad-index-it.html" hreflang="it" rel="alternate"/>
+  <script type="application/ld+json">
+   {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "name": "Index certifié FX1 – FR – V3.3.2+",
+    "version": "FX1-V3.3.2+",
+    "author": {
+      "@type": "Person",
+      "name": "Stefan Raitano"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "FX1 Documentation",
+      "url": "https://raitano-temmerman.github.io"
+    },
+    "datePublished": "2025-05-30",
+    "inLanguage": "fr",
+    "mainEntityOfPage": "https://raitano-temmerman.github.io/fx1trad-index-fr.html",
+    "translationOfWork": {
+      "@type": "TechArticle",
+      "inLanguage": "fr",
+      "url": "https://raitano-temmerman.github.io/index.html",
+      "headline": "Affaire judiciaire R vs T – Version certifiée FX1",
+      "description": "Affaire judiciaire réelle documentée selon les normes FX1, RGPD, AI Act 2024 et CEDH."
+    },
+    "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "FX1-UID",
+      "value": "fx1trad-index-FR-V3.3.2plus-20250530-001"
+    }
+  }
+  </script>
   <style>
-    body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #ffffff; color: #222; line-height: 1.7; }
-    nav { background: #eef3f7; padding: 1.5em; border-right: 2px solid #ccc; height: 100vh; width: 240px; position: fixed; top: 0; left: 0; overflow-y: auto; }
-    nav strong { display: block; font-size: 1.1em; margin-bottom: 1em; }
-    nav a { display: block; margin: 0.6em 0; color: #0057b7; text-decoration: none; font-weight: 600; }
-    nav a:hover { text-decoration: underline; }
-    main { margin-left: 260px; padding: 2em 3em; max-width: 900px; }
-    h2 { font-size: 1.6em; border-bottom: 2px solid #e2f0ff; padding-bottom: 0.3em; }
-    h3 { margin-top: 1.5em; color: #0c2d57; }
-    footer { margin-top: 3em; padding: 2em 1em; font-size: 0.9em; text-align: center; color: #666; background: #f9f9f9; border-top: 1px solid #ddd; }
-    code { background: #f1f5f9; padding: 2px 4px; border-radius: 4px; }
+   :root {
+      --color-primary: #0057b7;
+      --color-hover: #003b82;
+      --color-accent: #e2f0ff;
+      --color-text: #222;
+      --font-family: 'Segoe UI', 'Roboto', sans-serif;
+    }
+    body {
+      display: flex;
+      margin: 0;
+      font-family: var(--font-family);
+      color: var(--color-text);
+      background-color: #fff;
+      line-height: 1.7;
+      font-size: 1.05em;
+    }
+    nav {
+      min-width: 220px;
+      background-color: #f4f6fa;
+      padding: 2em 1em;
+      height: 100vh;
+      position: sticky;
+      top: 0;
+      border-right: 1px solid #ccc;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5em;
+    }
+    nav strong {
+      font-size: 1rem;
+      color: #444;
+      font-weight: 600;
+      padding-bottom: 0.5em;
+      border-bottom: 1px solid #ddd;
+    }
+    nav a {
+      display: block;
+      color: var(--color-primary);
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.2s ease-in-out;
+      margin-bottom: 0.5em;
+    }
+    nav a:hover {
+      color: var(--color-hover);
+      padding-left: 4px;
+    }
+    nav div.lang-menu {
+      text-align: right;
+      margin-bottom: 10px;
+      font-size: 0.9em;
+      background: #f9f9f9;
+      padding: 0.5em;
+      border-radius: 6px;
+      box-shadow: 0 0 4px rgba(0,0,0,0.1);
+    }
+    nav div.lang-menu a {
+      margin-left: 0.6em;
+      color: var(--color-primary);
+      text-decoration: none;
+    }
+    main {
+      padding: 2.5em 4em;
+      max-width: 960px;
+      flex-grow: 1;
+    }
+    section {
+      margin-bottom: 3em;
+    }
+    section h2 {
+      margin-bottom: 0.4em;
+      font-size: 1.6em;
+      border-bottom: 2px solid var(--color-accent);
+      padding-bottom: 0.3em;
+    }
+    footer {
+      margin-top: 4em;
+      font-size: 0.9em;
+      text-align: center;
+    }
   </style>
-</head>
-
-<body>
+  <script type="application/ld+json">
+   {
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "name": "FX1 – Page certifiée médiatique – FR – V3.3.2+",
+  "version": "FX1-V3.3.2+",
+  "author": {
+    "@type": "Person",
+    "name": "Stefan Raitano"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "FX1 Documentation",
+    "url": "https://raitano-temmerman.github.io"
+  },
+  "datePublished": "2025-05-30",
+  "inLanguage": "fr",
+  "mainEntityOfPage": "https://raitano-temmerman.github.io/fx1trad-mediatique-fr.html",
+  "translationOfWork": {
+    "@type": "TechArticle",
+    "inLanguage": "fr",
+    "url": "https://raitano-temmerman.github.io/mediatique.html",
+    "headline": "Affaire judiciaire – Dossier médiatique FX1",
+    "description": "Version certifiée FX1 conforme RGPD, AI Act 2024 et CEDH, traduite ou adaptée à la diffusion multilingue."
+  },
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "FX1-UID",
+    "value": "fx1trad-mediatique-fr.html"
+  }
+}
+  </script>
+ </head>
+ <body>
   <nav>
    <div style="background: #f9f9f9; padding: 1em; border-radius: 8px; width: fit-content; box-shadow: 0 0 6px rgba(0,0,0,0.1); margin-bottom: 1em;">
    <p>
