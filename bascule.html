@@ -88,32 +88,75 @@ footer {
 </head>
 
 <body>
-<!-- Menu multilingue -->
-<!-- ✅ FX1: Bloc multilingue standard – Début -->
 <nav id="lang-menu" style="background: #f8fafc; padding: 1.5em; border-radius: 12px; box-shadow: 0 0 8px rgba(0,0,0,0.05); margin-bottom: 2em; font-family: 'Segoe UI', sans-serif;">
-<div style="font-weight: bold; color: #0f172a; margin-bottom: 1em;">🌐 Version multilingue du site en préparation :</div>
-<div style="display: flex; flex-wrap: wrap; gap: 1em;">
-<a href="index.html" hreflang="fr" lang="fr" style="text-decoration: none; color: #003b82; font-weight: 600;">Français</a>
-<a href="index-nl.html" hreflang="nl" lang="nl" style="text-decoration: none; color: #003b82; font-weight: 600;">Nederlands</a>
-<a href="index-en.html" hreflang="en" lang="en" style="text-decoration: none; color: #003b82; font-weight: 600;">English</a>
-<a href="index-de.html" hreflang="de" lang="de" style="text-decoration: none; color: #003b82; font-weight: 600;">Deutsch</a>
-<a href="index-it.html" hreflang="it" lang="it" style="text-decoration: none; color: #003b82; font-weight: 600;">Italiano</a>
-</div>
-<hr style="margin: 1.5em 0; border: none; border-top: 1px solid #cbd5e1;"/>
-<div style="display: flex; flex-direction: column; gap: 0.5em;">
-<a aria-label="Retour à la page d'accueil" href="./index.html" style="color: #0c4a6e; text-decoration: none;">🏠 Accueil</a>
-<a aria-label="Page documentaire médiatique FX1" href="./mediatique.html" style="color: #0c4a6e; text-decoration: none;">📚 Dossier médiatique</a>
-<a aria-label="Page de certification cryptographique FX1" href="./certification.html" style="color: #0c4a6e; text-decoration: none;">📄 Certification FX1</a>
-<a aria-label="Mentions légales RGPD et AI Act FX1" href="./mentions-legales.html" style="color: #0c4a6e; text-decoration: none;">📑 Mentions légales</a>
-<a href="./pourquoi.html" style="color: #0c4a6e; text-decoration: none;">❓ Pourquoi ce site existe</a>
-<a href="./pourquoi.html" style="color: #0c4a6e; text-decoration: none;">💡 La bascule – Une justice pour tous</a>
-</div>
+  <div style="font-weight: bold; color: #0f172a; margin-bottom: 1em;">🌐 Version multilingue du site en préparation :</div>
+  <div style="display: flex; flex-wrap: wrap; gap: 1em;">
+    <a lang="fr" style="text-decoration: none; color: #1e40af; font-weight: 600;" href="bascule.html" hreflang="fr">Français</a>
+    <a lang="nl" style="text-decoration: none; color: #1e40af; font-weight: 600;" href="bascule-nl.html" hreflang="nl">Nederlands</a>
+    <a lang="en" style="text-decoration: none; color: #1e40af; font-weight: 600;" href="bascule-en.html" hreflang="en">English</a>
+    <a lang="de" style="text-decoration: none; color: #1e40af; font-weight: 600;" href="bascule-de.html" hreflang="de">Deutsch</a>
+    <a lang="it" style="text-decoration: none; color: #1e40af; font-weight: 600;" href="bascule-it.html" hreflang="it">Italiano</a>
+  </div>
+  <hr style="margin: 1.5em 0; border: none; border-top: 1px solid #cbd5e1;" />
+  <div style="display: flex; flex-direction: column; gap: 0.5em;">
+    <a style="color: #0c4a6e; text-decoration: none;" href="./index.html" aria-label="Retour à la page d'accueil">🏠 Accueil</a>
+    <a style="color: #0c4a6e; text-decoration: none;" href="./mediatique.html">📚 Dossier médiatique</a>
+    <a style="color: #0c4a6e; text-decoration: none;" href="./certification.html">📄 Certification FX1</a>
+    <a style="color: #0c4a6e; text-decoration: none;" href="./mentions-legales.html">📑 Mentions légales</a>
+    <a style="color: #0c4a6e; text-decoration: none;" href="./pourquoi.html">❓pourquoi.html</a>
+    <a style="color: #0c4a6e; text-decoration: none;" href="./bascule.html">💡 La bascule – Une justice pour tous</a>
+  </div>
 </nav>
-<main role="main">
-<h1 style="font-family: 'Inter', sans-serif; font-size: 2.5rem; margin: 1.5rem 0; color: #003b82;">📘 La bascule – Une justice pour tous</h1>
-<h2 style="color: #333; margin-top: 1em;">
-    🔎 Phase 1/3 – En attente de suite documentée (plainte pénale en cours)
-   </h2>
+
+<main>
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La bascule – Une justice pour tous
+🔎 Phase 1/3 – En attente de suite documentée (plainte pénale en cours)</title>
+  <style>
+    .fx1-banner {
+      background-color: #0f172a;
+      color: #f1f5f9;
+      padding: 2.5rem 2rem;
+      border-radius: 16px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+      margin-bottom: 2.5rem;
+      text-align: center;
+    }
+
+    .fx1-titre-principal {
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(1.9rem, 4vw, 2.7rem);
+      font-weight: 600;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    .fx1-titre-principal strong {
+      color: #38bdf8;
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <!-- En-tête visuel -->
+    <header style="margin-bottom:2em;">
+      <img alt="Présentation judiciaire documentaire FX1."
+           src="/img/fx1-header-nl.jpg"
+           style="width:100%; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" />
+    </header>
+
+    <!-- Bloc FX1 harmonisé -->
+    <header class="fx1-banner">
+      <h2 class="fx1-titre-principal">
+        📘 La bascule – <strong> Une justice pour tous</strong>  🔎 Phase 1/3 – En attente de suite documentée (plainte pénale en cours)
+
+      </h2>
+    </header>
+
+     
 <section style="margin: 2em auto; background-color: #f9fbff; padding: 1.5em 2em; border-radius: 12px; box-shadow: 0 3px 8px rgba(0,0,0,0.05); margin-bottom: 2em;">
 <p>
 <strong>
