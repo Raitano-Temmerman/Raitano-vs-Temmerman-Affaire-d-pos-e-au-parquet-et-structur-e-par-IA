@@ -111,38 +111,72 @@
 
 
 
-<main>
-  <!-- En-tête visuel -->
-  <header style="margin-bottom:2em;">
-    <img alt="Documentaire gerechtelijke presentatie FX1"
-         src="/img/fx1-header-nl.jpg"
-         style="width:100%; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" />
-  </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Presentatie van de gerechtelijke zaak – RAITANO vs TEMMERMAN (Vlaams-Brabant)</title>
+  <style>
+    .fx1-banner {
+      background-color: #0f172a;
+      color: #f1f5f9;
+      padding: 2.5rem 2rem;
+      border-radius: 16px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+      margin-bottom: 2.5rem;
+      text-align: center;
+    }
 
-  <!-- Bloc FX1 harmonisé -->
-  <section style="
-    background-color: #0f172a;
-    color: #f1f5f9;
-    padding: 2.5rem 2rem;
-    border-radius: 16px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
-    margin-bottom: 2.5rem;
-    text-align: center;
-    font-family: 'Inter', sans-serif;
-  ">
-    <h2 style="
+    .fx1-titre-principal {
+      font-family: 'Inter', sans-serif;
       font-size: clamp(1.9rem, 4vw, 2.7rem);
       font-weight: 600;
       line-height: 1.5;
       margin: 0;
-    ">
-      📘 Presentatie van de gerechtelijke zaak – 
-      <strong style="color: #38bdf8;">RAITANO vs TEMMERMAN</strong> 
-      <br/>(Vlaams-Brabant)
-    </h2>
-    <hr style="margin-top: 2rem; border: none; border-top: 1px solid #f1f5f9;" />
-  </section>
-</main>
+    }
+
+    .fx1-titre-principal strong {
+      color: #38bdf8;
+    }
+  </style>
+
+<style>
+  .fx1-layout {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    align-items: flex-start;
+  }
+
+  #lang-menu {
+    flex: 0 0 260px;
+    position: sticky;
+    top: 1.5em;
+    align-self: flex-start;
+  }
+
+  main {
+    flex: 1;
+    max-width: 100%;
+  }
+</style>
+
+</head>
+<body>
+
+  <main>
+    <!-- En-tête visuel -->
+    <header style="margin-bottom:2em;">
+      <img alt="Documentaire gerechtelijke presentatie FX1"
+           src="/img/fx1-header-nl.jpg"
+           style="width:100%; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" />
+    </header>
+
+    <!-- Bloc FX1 harmonisé -->
+    <header class="fx1-banner">
+      <h2 class="fx1-titre-principal">
+        📘 Presentatie van de gerechtelijke zaak – <strong>RAITANO vs TEMMERMAN</strong> (Vlaams-Brabant)
+      </h2>
+    </header>
 
     <!-- Contenu juridique -->
     <h3>📄 Juridische context</h3>
@@ -189,7 +223,17 @@
 
 
   </main>
-  
+  <footer style="margin-top: 4em; font-size: 0.9em; text-align: center; background-color: #f8f9fa; padding: 1em; border-top: 2px solid #e2e8f0; border-radius: 8px;">
+  <p style="margin-bottom: 0.5em;">
+    © 2025 – Publicatie volgens FX1-norm – Gecertificeerd volgens AVG / AI Act / EVRM<br/>
+    UID: <code>fx1trad-mediatique-nl.html</code> – SHA-256 geverifieerd
+  </p>
+  <p style="margin-top: 0.5em;">
+    <a href="https://archive.ph/DUgRw" rel="noopener noreferrer" target="_blank">
+      📁 Officieel gearchiveerd bewijs 2 juni ( 2025)
+    </a>
+  </p>
+</footer>
 
 
 </div>
