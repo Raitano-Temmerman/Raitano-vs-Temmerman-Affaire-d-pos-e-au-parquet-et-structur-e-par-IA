@@ -1,0 +1,32 @@
+[
+  {
+    "filename": "sitemap.xml",
+    "sha512": "c4a202cd71ec0db00f5bb5b34679da4d6f8d14e2d32cc7c70bacd80a04b0c42dc30ee2b12c1edf1231ecd57bb5d95178426a61c314ad4e47d81ab2b52f639677",
+    "fx1-uid": "fx1-sitemap-xml",
+    "dc.terms.created": "2025-06-07T19:54:25.236179Z"
+  },
+  {
+    "filename": "sitemap.xml.sha512",
+    "sha512": "7d53a80cf4244e0cccd9af0be484992e6ae0f2afc5bafd6ef354bd82d96ee665cda7a39b774cd9f0bf7707a2102f4eb06167ca2e649d0dbe3aaccf897962455b",
+    "fx1-uid": "fx1-sitemap-xml-sha512",
+    "dc.terms.created": "2025-06-07T19:54:25.236342Z"
+  },
+  {
+    "filename": "google350c0f16e658dffc.html",
+    "sha512": "ba2144db86c80fbd4b185a2074107a978e3ec0cd90bf9b72a80119b744c55e61c5bf5a5380545e6bdcef7b757572f2562e0fd55573dacf67606a543ae6f34e91",
+    "fx1-uid": "fx1-google350c0f16e658dffc-html",
+    "dc.terms.created": "2025-06-07T19:54:25.236456Z"
+  },
+  {
+    "filename": "Attestation_FX1_Ultra_V3.3.2plus_20250530.pdf",
+    "sha512": "3f542ef283c18c7de8166d80e987f7e3f323b1251f5ddf9c8288f400c66c7038b7a92776c1950318d6ead8c1380bcdb41d5b403af1a3eccc48af596db7c27779",
+    "fx1-uid": "fx1-Attestation_FX1_Ultra_V3-3-2plus_20250530-pdf",
+    "dc.terms.created": "2025-06-07T19:54:25.236621Z"
+  },
+  {
+    "filename": "attestation-en.html",
+    "sha512": "9fcf0281bfe60ab38c66c59c45ab7539d73ca6634499398d332ba9bfa7913436d7bbc4c1e2b5263875a6730397869a4517f443c57dd236f78e1449ec238ea709",
+    "fx1-uid": "fx1-attestation-en-html",
+    "dc.terms.created": "2025-06-07T19:54:25.236780Z"
+  }
+]
