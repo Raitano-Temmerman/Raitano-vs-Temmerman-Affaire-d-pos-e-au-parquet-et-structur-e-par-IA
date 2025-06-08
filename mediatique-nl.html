@@ -364,27 +364,27 @@ Na grondige verificatie volgens de FX1-Ultra++-criteria, aangepast aan GPT-4o, i
     UID: <code>fx1trad-bascule-EN.html</code> – SHA-256 verified
   </p>
 </footer>
- <!-- Bouton retour en haut -->
-    <button class="back-to-top" id="backToTopBtn">↑</button>
+<!-- Bouton retour en haut -->
+<button class="back-to-top" id="backToTopBtn" style="display: none;">↑</button>
 
-    <script>
-        // Récupération du bouton
-        var mybutton = document.getElementById("backToTopBtn");
+<script>
+  // Récupération du bouton
+  var mybutton = document.getElementById("backToTopBtn");
 
-        // Lorsque l'utilisateur fait défiler la page de 20px vers le bas, afficher le bouton
-        window.onscroll = function() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        };
+  // Lorsque l'utilisateur fait défiler la page de 20px vers le bas, afficher le bouton
+  window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block"; // Afficher le bouton
+    } else {
+      mybutton.style.display = "none"; // Cacher le bouton si on est en haut de la page
+    }
+  };
 
-        // Lorsque l'utilisateur clique sur le bouton, revenir en haut de la page
-        mybutton.onclick = function() {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        };
-    </script>
+  // Lorsque l'utilisateur clique sur le bouton, revenir en haut de la page
+  mybutton.onclick = function() {
+    window.scrollTo({ top: 0, behavior: "smooth" }); // Remonter en haut de la page
+  };
+</script>
 
 </body>
 </html>
