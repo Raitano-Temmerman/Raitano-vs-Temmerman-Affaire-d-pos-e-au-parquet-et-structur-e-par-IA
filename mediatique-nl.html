@@ -373,7 +373,7 @@ Na grondige verificatie volgens de FX1-Ultra++-criteria, aangepast aan GPT-4o, i
 
   // Lorsque l'utilisateur fait défiler la page de 20px vers le bas, afficher le bouton
   window.onscroll = function() {
-    // Vérifie si l'utilisateur est assez près du bas de la page
+    // Vérifie si l'utilisateur a fait défiler la page
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
       mybutton.style.display = "block"; // Afficher le bouton
     } else {
@@ -390,10 +390,9 @@ Na grondige verificatie volgens de FX1-Ultra++-criteria, aangepast aan GPT-4o, i
 <style>
   /* Style pour le bouton "Retour en haut" */
   .back-to-top {
-    position: absolute; /* Pas de position fixe, il se déplace avec le contenu */
-    bottom: 10px; /* Décalage vers le bas */
-    left: 50%;  /* Centré horizontalement */
-    transform: translateX(-50%); /* Ajuste la position pour centrer le bouton */
+    position: fixed;  /* Le bouton est fixé à la position en bas à droite */
+    bottom: 20px;     /* 20px du bas */
+    right: 20px;      /* 20px de la droite */
     background-color: #38bdf8;
     color: white;
     border: none;
@@ -410,6 +409,7 @@ Na grondige verificatie volgens de FX1-Ultra++-criteria, aangepast aan GPT-4o, i
     background-color: #0f172a;
   }
 </style>
+
 
 
 </body>
