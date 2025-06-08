@@ -199,8 +199,30 @@ Fichiers complémentaires : robots.txt, sitemap.xml.gz, fx1-certification.sig.as
     UID: <code>fx1trad-bascule-EN.html</code> – SHA-256 verified
   </p>
 </footer>
-
-    </main>
+      /div>
   </div>
+
+  <!-- Bouton retour en haut -->
+  <button class="back-to-top" id="backToTopBtn">↑</button>
+
+  <script>
+    // Récupération du bouton
+    var mybutton = document.getElementById("backToTopBtn");
+
+    // Lorsque l'utilisateur fait défiler la page de 20px vers le bas, afficher le bouton
+    window.onscroll = function() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    };
+
+    // Lorsque l'utilisateur clique sur le bouton, revenir en haut de la page
+    mybutton.onclick = function() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+  </script>
+
 </body>
 </html>
