@@ -211,5 +211,54 @@ Fichiers complémentaires : robots.txt, sitemap.xml.gz, fx1-certification.sig.as
 <li>📜 Compliant with GDPR (Art. 6.1.e-f), AI Act, ECHR Art. 10, eIDAS</li>
 </ul>
 </section>
+  <!-- Bouton retour en haut -->
+<button class="back-to-top" id="backToTopBtn" style="display: none;">↑</button>
+
+<script>
+  // Récupération du bouton
+  var mybutton = document.getElementById("backToTopBtn");
+
+  // Lorsque l'utilisateur fait défiler la page de 20px vers le bas, afficher le bouton
+  window.onscroll = function() {
+    // Vérifie si l'utilisateur a fait défiler la page
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      mybutton.style.display = "block"; // Afficher le bouton
+    } else {
+      mybutton.style.display = "none"; // Cacher le bouton si on est en haut de la page
+    }
+  };
+
+  // Lorsque l'utilisateur clique sur le bouton, revenir en haut de la page
+  mybutton.onclick = function() {
+    window.scrollTo({ top: 0, behavior: "smooth" }); // Remonter en haut de la page
+  };
+</script>
+
+<style>
+  /* Style pour le bouton "Retour en haut" */
+  .back-to-top {
+    position: fixed;  /* Le bouton est fixé à la position en bas à droite */
+    bottom: 20px;     /* 20px du bas */
+    right: 20px;      /* 20px de la droite */
+    background-color: #38bdf8;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    display: none; /* Masqué au départ */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Style du bouton au survol */
+  .back-to-top:hover {
+    background-color: #0f172a;
+  }
+</style>
+
+</body>
+</html>
+
 </body>
 </html>
