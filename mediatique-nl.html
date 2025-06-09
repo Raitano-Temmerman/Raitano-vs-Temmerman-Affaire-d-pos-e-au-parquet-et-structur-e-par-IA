@@ -439,23 +439,7 @@ Diffusion autorisée uniquement à des fins de preuve judiciaire.
       Compliance : GDPR (art. 6.1.e/f), EVRM (art. 10), AI Act. Deze site is exclusief gepubliceerd voor bewijsdoeleinden, in overeenstemming met het recht in gerechtelijke procedures.
      </p>
 </section>
-<footer role="contentinfo" style="margin-top: 4em; font-size: 0.9em; text-align: center; background-color: #f8f9fa; padding: 1em; border-top: 2px solid #e2e8f0; border-radius: 8px;">
-<p style="font-size: 0.9rem; color: #475569;">
-      © 2025 – Alle rechten voorbehouden. Reproductie, verspreiding, vertaling of aanpassing is verboden zonder voorafgaande schriftelijke toestemming.
-     </p>
-<p style="margin-bottom: 0.5em;">
-      © 2025 Raitano – FX1 Gestructureerde Certificering. Reproductie verboden behalve voor strikt persoonlijk of educatief gebruik.
-     </p>
-<p style="margin-bottom: 0;">
-      ✅ Publicatie conform FX1 standaard – GDPR / AI Act / EVRM
-      <br/>
-      UID :
-      <code>
-       fx1-validation-20250604
-      </code>
-      – SHA-256 gecontroleerd
-     </p>
-</footer>
+
 
 <section id="fx1-updates" style="background-color: #fefce8; padding: 2em; border-radius: 12px; margin-top: 3em; box-shadow: 0 3px 8px rgba(0,0,0,0.05);">
   <h2>📂 FX1 – Updates consolidés (PJ16 à PJ33)</h2>
@@ -466,8 +450,66 @@ Diffusion autorisée uniquement à des fins de preuve judiciaire.
     <li><strong>PJ33</strong> – Einde van bevriezing et heractivatie pénale – SHA-512: <code>13dfa560cda4fc957309be0b5c4c7f0e962a654b2127ae8fdb18536aea78befb...</code></li>
   </ul>
 </section>
+</section>
 
-</main>
-</div>
+<footer style="margin-top: 4em; font-size: 0.9em; text-align: center; background-color: #f8f9fa; padding: 1em; border-top: 2px solid #e2e8f0; border-radius: 8px;">
+ <p style="font-size: 0.9rem; color: #475569;">
+  © 2025 – Alle rechten voorbehouden. Geen enkel deel van deze publicatie mag worden gereproduceerd, verspreid, vertaald of aangepast zonder voorafgaande schriftelijke toestemming.
+</p>
+
+  <p style="margin-bottom: 0.5em;">
+    © 2025 Raitano – FX1-certified structure. Reproduction is prohibited without permission, except for strictly personal or educational use.
+  </p>
+  <p style="margin-bottom: 0;">
+    ✅ Compliant with FX1 standard – Certified for GDPR / AI Act / ECHR<br/>
+    UID: <code>fx1trad-bascule-EN.html</code> – SHA-256 verified
+  </p>
+</footer>
+<!-- Bouton retour en haut -->
+<button class="back-to-top" id="backToTopBtn" style="display: none;">↑</button>
+
+<script>
+  // Récupération du bouton
+  var mybutton = document.getElementById("backToTopBtn");
+
+  // Lorsque l'utilisateur fait défiler la page de 20px vers le bas, afficher le bouton
+  window.onscroll = function() {
+    // Vérifie si l'utilisateur a fait défiler la page
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      mybutton.style.display = "block"; // Afficher le bouton
+    } else {
+      mybutton.style.display = "none"; // Cacher le bouton si on est en haut de la page
+    }
+  };
+
+  // Lorsque l'utilisateur clique sur le bouton, revenir en haut de la page
+  mybutton.onclick = function() {
+    window.scrollTo({ top: 0, behavior: "smooth" }); // Remonter en haut de la page
+  };
+</script>
+
+<style>
+  /* Style pour le bouton "Retour en haut" */
+  .back-to-top {
+    position: fixed;  /* Le bouton est fixé à la position en bas à droite */
+    bottom: 20px;     /* 20px du bas */
+    right: 20px;      /* 20px de la droite */
+    background-color: #38bdf8;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    display: none; /* Masqué au départ */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Style du bouton au survol */
+  .back-to-top:hover {
+    background-color: #0f172a;
+  }
+</style>
+
 </body>
 </html>
