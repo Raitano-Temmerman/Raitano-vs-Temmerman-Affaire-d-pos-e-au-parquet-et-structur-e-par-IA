@@ -165,6 +165,32 @@
 <p>📌 This link allows independent access to the content as it stood on the date of submission, including: submitted evidence, chronology, FX1 certification, GDPR and ECHR compliance.</p>
 </p>
 </section>
+  </section>
+</div>
+</div>
+<!-- Bouton retour en haut -->
+<button class="back-to-top" id="backToTopBtn">
+   ↑
+  </button>
+<script>
+   // Récupération du bouton
+    var mybutton = document.getElementById("backToTopBtn");
+
+    // Lorsque l'utilisateur fait défiler la page de 20px vers le bas, afficher le bouton
+    window.onscroll = function() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    };
+
+    // Lorsque l'utilisateur clique sur le bouton, revenir en haut de la page
+    mybutton.onclick = function() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+  </script>
+</body>
 </section>
 <footer style="margin-top: 4em; font-size: 0.9em; text-align: center; background-color: #f8f9fa; padding: 1em; border-top: 2px solid #e2e8f0; border-radius: 8px;">
  <p style="font-size: 0.9rem; color: #475569;">
