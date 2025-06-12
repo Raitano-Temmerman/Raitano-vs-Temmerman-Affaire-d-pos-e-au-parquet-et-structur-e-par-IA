@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://raitano-temmerman.github.io/Raitano-vs-Temmerman-Affaire-d-pos-e-au-parquet-et-structur-e-par-IA/sitemap.xml
+Google-site-verification: google350c0f16e658dffc.html
