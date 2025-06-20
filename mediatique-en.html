@@ -1,5 +1,6 @@
 
 
+
 <!DOCTYPE html>
 
 <!DOCTYPE html>
@@ -853,6 +854,11 @@ It does not constitute targeted dissemination or an intent to cause harm, and fa
 🕊️ This site is not intended to cause harm or to influence public opinion.  
 Its content is solely meant to document an ongoing legal proceeding, within a framework of transparency in compliance with the GDPR, the ECHR, and the AI Act.
 </p>
+
+<small style="color:#6b7280;font-size:0.75em;">
+🔒 Journalisation technique conforme RGPD art. 6.1.f – Aucune donnée personnelle stockée – Usage exclusivement interne.
+</small>
+
 </footer>
 <section style="background-color: #f0fdf4; padding: 1.5em; border-radius: 12px;
                 box-shadow: 0 0 8px rgba(0,0,0,0.06); margin-top: 2em; border-left: 6px solid #16a34a;">
@@ -887,5 +893,21 @@ Date_ISO: 2025-06-20
 Langue: en
 SHA-256: 21bd789c30174ba58bf5e66f203d9880643aeba2f5295327b002e7e4e324e247
 SHA-512: f2f15fa61bd4312c0df647dba2178b0e49afab9c58470143c9383299a594dc9ca891255cf5885d5ff86774a7d1b7cc2e5ef6b95ede1f89633b09ea0d5c69c746
-FX1_METADATA_END--></body>
+FX1_METADATA_END-->
+<script>
+fetch('https://votresite.com/fx1-log-endpoint.php', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({
+    page: window.location.pathname,
+    userAgent: navigator.userAgent,
+    language: navigator.language,
+    timestamp: new Date().toISOString()
+  })
+});
+</script>
+
+</body>
 </html>
