@@ -1,5 +1,6 @@
 
 
+
 <!DOCTYPE html>
 
 <html lang="nl">
@@ -1683,6 +1684,11 @@ Ze vormt geen gerichte verspreiding, noch een intentie tot schade, en valt onder
     🕊️ Deze site is niet bedoeld om schade toe te brengen of de publieke opinie te beïnvloeden.  
 De inhoud dient uitsluitend ter documentatie van een lopende gerechtelijke procedure, in een transparant kader dat in overeenstemming is met de GDPR, het EVRM en de AI-verordening.
    </p>
+
+<small style="color:#6b7280;font-size:0.75em;">
+🔒 Journalisation technique conforme RGPD art. 6.1.f – Aucune donnée personnelle stockée – Usage exclusivement interne.
+</small>
+
 </footer>
 <!-- Bouton retour en haut -->
 <button class="back-to-top" id="backToTopBtn" style="display: none;">
@@ -1735,5 +1741,21 @@ Date_ISO: 2025-06-20
 Langue: nl
 SHA-256: e87b67a722e3c9d14859ebd73fd73efe3df2174120dfe41b87a6bfd03222aa96
 SHA-512: 90d9446e647a2c280e5be2f83cfe43fdf55dc954afe15f8b6d957b6b3d369c0a906290e1fea2b5bbff465fe200d1c5f0dbd0ac60ab75522bd0aecd5128cb7706
-FX1_METADATA_END--></body>
+FX1_METADATA_END-->
+<script>
+fetch('https://votresite.com/fx1-log-endpoint.php', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({
+    page: window.location.pathname,
+    userAgent: navigator.userAgent,
+    language: navigator.language,
+    timestamp: new Date().toISOString()
+  })
+});
+</script>
+
+</body>
 </html>
