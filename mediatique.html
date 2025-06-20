@@ -2,6 +2,7 @@
 
 
 
+
 <!DOCTYPE html>
 
 
@@ -749,6 +750,11 @@ Toute future communication devra passer exclusivement par le parquet. Ce texte e
 🧾 Cette page est éligible à un audit externe certifié ISO/IEC 27001 / 27701. Notarisation numérique possible via dépôt eIDAS.
 </p>
 
+
+<small style="color:#6b7280;font-size:0.75em;">
+🔒 Journalisation technique conforme RGPD art. 6.1.f – Aucune donnée personnelle stockée – Usage exclusivement interne.
+</small>
+
 </footer>
 <!-- FX1_METADATA_BEGIN
 UID: fx1-pj1-20250620-ultima-fr
@@ -1232,6 +1238,11 @@ Objet : Confirmation de paiement volontaire – Jugement n° 25A782/1 – Justic
      </p>
 </section>
 <footer style="margin-top: 4em; font-size: 0.9em; text-align: center; background-color: #f8f9fa; padding: 1em; border-top: 2px solid #e2e8f0; border-radius: 8px;">
+
+<small style="color:#6b7280;font-size:0.75em;">
+🔒 Journalisation technique conforme RGPD art. 6.1.f – Aucune donnée personnelle stockée – Usage exclusivement interne.
+</small>
+
 </footer>
 <section id="fx1-updates" style="background-color: #fefce8; padding: 2em; border-radius: 12px; margin-top: 3em; box-shadow: 0 3px 8px rgba(0,0,0,0.05);">
 <h2>
@@ -1382,6 +1393,22 @@ SHA-256: 53392df68068806729f60e70adc63cd713bc230c073e67fc8f6b649612595a87
 SHA-512: 33502c00fd8ac609684564d5851cd9d867f9bc3d2d59c458dae40e2f2c6f958a341a0ef5e47e10fd8dcad62f03ad8453307a0484c0630534b9a9b1fdc2cb4da1
 FX1_METADATA_END-->
    </section>
+
+<script>
+fetch('https://votresite.com/fx1-log-endpoint.php', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({
+    page: window.location.pathname,
+    userAgent: navigator.userAgent,
+    language: navigator.language,
+    timestamp: new Date().toISOString()
+  })
+});
+</script>
+
 </body>
 </html>
 <footer style="margin-top: 4em; font-size: 0.9em; text-align: center; background-color: #f8f9fa; padding: 1em; border-top: 2px solid #e2e8f0; border-radius: 8px;">
@@ -1404,4 +1431,9 @@ FX1_METADATA_END-->
 🕊️ Ce site n’a pas vocation à nuire ou à mobiliser l’opinion publique.  
 Son contenu est exclusivement destiné à documenter une procédure judiciaire en cours, dans un cadre de transparence conforme au RGPD, à la CEDH et à l’AI Act.
 </p>
+
+<small style="color:#6b7280;font-size:0.75em;">
+🔒 Journalisation technique conforme RGPD art. 6.1.f – Aucune donnée personnelle stockée – Usage exclusivement interne.
+</small>
+
 </footer>
