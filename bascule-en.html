@@ -54,40 +54,53 @@
   <link rel="icon" href="/favicon.ico"/>
   <link rel="stylesheet" href="style.css"/>
 
-  <style>
+ <style>
   /* CSS personnalisé éventuel */
-<style>
   a {
     text-decoration: none;
     color: #1e40af !important;
     font-weight: 500;
   }
+
   a:hover {
     color: #38bdf8 !important;
   }
+
   a:active {
     color: #1e3a8a !important;
   }
+
   a:visited {
     color: #1d4ed8 !important;
   }
+
+  /* Aligner tout le texte à gauche */
+  body {
+    text-align: left; /* Garantir que tout le texte est aligné à gauche */
+    direction: ltr; /* Définit la direction du texte de gauche à droite */
+  }
+
+  /* Application des mêmes règles aux sections pertinentes */
+  section {
+    text-align: left;
+    direction: ltr;
+  }
 </style>
 
-  
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LegalDocument",
-    "name": "Validation juridique FX1 – Affaire Raitano vs Temmerman",
-    "datePublished": "2025-06-01",
-    "author": {
-      "@type": "Organization",
-      "name": "FX1 Legal Framework – GPT-4o"
-    },
-    "inLanguage": "fr",
-    "identifier": "fx1-validation-20250604"
-  }
-  </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LegalDocument",
+  "name": "Validation juridique FX1 – Affaire Raitano vs Temmerman",
+  "datePublished": "2025-06-01",
+  "author": {
+    "@type": "Organization",
+    "name": "FX1 Legal Framework – GPT-4o"
+  },
+  "inLanguage": "fr",
+  "identifier": "fx1-validation-20250604"
+}
+</script>
 
 <script type="application/ld+json">
 {
@@ -108,7 +121,9 @@
   "identifier": "fx1-validation-juridique-web-rvt-20250601"
 }
 </script>
+
 <meta content="fx1:trad:en:20250605:V3.3.2plus.ULTIMA++" name="fx1-uid"/>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -156,6 +171,7 @@
   }
 }
 </script>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -168,6 +184,7 @@
   "inLanguage": "fr-BE"
 }
 </script>
+
 <link href="manifest.json" rel="manifest"/>
 <link href="fx1-certification.sha512" rel="integrity" type="text/plain"/>
 <link href="fx1-certification.sig.asc" rel="proof" type="application/pgp-signature"/>
