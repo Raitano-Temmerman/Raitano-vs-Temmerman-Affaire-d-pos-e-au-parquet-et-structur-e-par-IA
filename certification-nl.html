@@ -1,9 +1,3 @@
-
-
-
-
-
-
 <!DOCTYPE html>
 
 <!-- FX1_HEADER -->
@@ -28,15 +22,8 @@ UID FX1: fx1-pj1-20250615-ultima-nl
 <meta content="fx1-validation-juridique-web-rvt-20250601" name="fx1-uid"/>
 <meta content="#0057b7" name="theme-color"/>
 <link href="https://raitano-temmerman.github.io/Raitano-vs-TEMMERMAN-Affaire-d-pos-e-au-parquet-et-structur-e-par-IA/mediatique.html" rel="canonical"/>
-<meta content="Affaire R vs T – Documentation publique FX1" property="og:title"/>
-<meta content="Page documentaire certifiée FX1, conforme au RGPD, sur une affaire réelle en Brabant flamand." property="og:description"/>
-<meta content="article" property="og:type"/>
-<meta content="https://raitano-temmerman.github.io/Raitano-vs-TEMMERMAN-Affaire-d-pos-e-au-parquet-et-structur-e-par-IA/mediatique.html" property="og:url"/>
-<meta content="fr_BE" property="og:locale"/>
-<meta content="fx1-validation-juridique-web-rvt-20250601" name="fx1-uid"/>
-<meta content="FX1-V3.3.2plus-2025-05-30" name="version"/>
 
-<!-- Styles pour l'alignement du texte et la mise en page responsive -->
+<!-- Section <style> pour les ajustements CSS -->
 <style>
   :root {
     --color-primary: #0057b7;
@@ -132,124 +119,149 @@ UID FX1: fx1-pj1-20250615-ultima-nl
     color: var(--color-hover);
   }
 
+  /* Flexbox pour la mise en page */
+  .container {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux éléments de se déplacer sous forme de lignes sur les petits écrans */
+    gap: 20px; /* Espacement entre les éléments */
+    padding: 20px;
+  }
+
+  .sidebar {
+    background-color: #f1f5f9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    flex: 1 1 250px;  /* Colonne de navigation (à gauche) */
+  }
+
+  .main-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    flex: 3 1 60%; /* Contenu principal (à droite) */
+  }
+
+  /* Règles responsive pour les petits écrans */
   @media (max-width: 768px) {
-    body {
-      flex-direction: column;
+    .container {
+      flex-direction: column; /* Empile les colonnes sur petits écrans */
     }
 
-    nav {
-      height: auto;
-      position: relative;
-      flex-direction: row;
-      overflow-x: auto;
-    }
-
-    nav a {
-      margin-right: 1em;
-    }
-
-    main {
-      padding: 1.5em;
+    .sidebar, .main-content {
+      flex: 1 1 100%; /* Chaque section prend 100% de la largeur */
     }
   }
 </style>
+<!-- Fin de la section <style> -->
 
-<!-- JSON-LD Scripts for structured data -->
+<!-- JSON-LD Scripts pour données structurées -->
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LegalDocument",
-  "name": "Validation juridique FX1 – Affaire Raitano vs Temmerman",
-  "datePublished": "2025-06-01",
-  "author": {
-    "@type": "Organization",
-    "name": "FX1 Legal Framework – GPT-4o"
-  },
-  "inLanguage": "fr",
-  "identifier": "fx1-validation-20250604"
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LegalDocument",
-  "name": "Validation juridique FX1 – Affaire Raitano vs Temmerman",
-  "datePublished": "2025-06-01",
-  "author": {
-    "@type": "Organization",
-    "name": "FX1 Legal Framework – GPT-4o"
-  },
-  "inLanguage": "fr",
-  "isPartOf": {
-    "@type": "WebPage",
-    "name": "Affaire RAITANO vs TEMMERMAN",
-    "url": "https://raitano-temmerman.github.io/"
-  },
-  "identifier": "fx1-validation-juridique-web-rvt-20250601"
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "TechArticle",
-  "headline": "Affaire Raitano vs Temmerman – FX1 Documentation",
-  "author": {
-    "@type": "Person",
-    "name": "Stefan Raitano"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "FX1 Documentation",
-    "url": "https://raitano-temmerman.github.io"
-  },
-  "datePublished": "2025-06-04",
-  "inLanguage": "fr-BE",
-  "isAccessibleForFree": true,
-  "hasPart": [
-    {
-      "@type": "WebPage",
-      "url": "https://raitano-temmerman.github.io/mediatique.html"
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalDocument",
+    "name": "Validation juridique FX1 – Affaire Raitano vs Temmerman",
+    "datePublished": "2025-06-01",
+    "author": {
+      "@type": "Organization",
+      "name": "FX1 Legal Framework – GPT-4o"
     },
-    {
+    "inLanguage": "fr",
+    "identifier": "fx1-validation-20250604"
+  }
+</script>
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalDocument",
+    "name": "Validation juridique FX1 – Affaire Raitano vs Temmerman",
+    "datePublished": "2025-06-01",
+    "author": {
+      "@type": "Organization",
+      "name": "FX1 Legal Framework – GPT-4o"
+    },
+    "inLanguage": "fr",
+    "isPartOf": {
       "@type": "WebPage",
-      "url": "https://raitano-temmerman.github.io/fx1-certification.html"
-    }
-  ],
-  "proof": {
-    "@type": "DigitalDocumentPermission",
-    "grantee": {
+      "name": "Affaire RAITANO vs TEMMERMAN",
+      "url": "https://raitano-temmerman.github.io/"
+    },
+    "identifier": "fx1-validation-juridique-web-rvt-20250601"
+  }
+</script>
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Affaire Raitano vs Temmerman – FX1 Documentation",
+    "author": {
       "@type": "Person",
-      "email": "stefan.raitano@fx1-docs.eu"
+      "name": "Stefan Raitano"
     },
-    "validFrom": "2025-06-04T00:00:00Z",
-    "proofService": "https://fx1-verification.net/verify?doc=20250604-FX1"
-  },
-  "license": "https://raitano-temmerman.github.io/fx1-legal-license.html",
-  "verifiableCredential": {
-    "@context": ["https://www.w3.org/2018/credentials/v1"],
-    "type": ["VerifiableCredential", "WebDocument"],
-    "issuer": "did:web:fx1-docs.eu",
-    "credentialSubject": {
-      "id": "https://raitano-temmerman.github.io/bascule.html"
+    "publisher": {
+      "@type": "Organization",
+      "name": "FX1 Documentation",
+      "url": "https://raitano-temmerman.github.io"
+    },
+    "datePublished": "2025-06-04",
+    "inLanguage": "fr-BE",
+    "isAccessibleForFree": true,
+    "hasPart": [
+      {
+        "@type": "WebPage",
+        "url": "https://raitano-temmerman.github.io/mediatique.html"
+      },
+      {
+        "@type": "WebPage",
+        "url": "https://raitano-temmerman.github.io/fx1-certification.html"
+      }
+    ],
+    "proof": {
+      "@type": "DigitalDocumentPermission",
+      "grantee": {
+        "@type": "Person",
+        "email": "stefan.raitano@fx1-docs.eu"
+      },
+      "validFrom": "2025-06-04T00:00:00Z",
+      "proofService": "https://fx1-verification.net/verify?doc=20250604-FX1"
+    },
+    "license": "https://raitano-temmerman.github.io/fx1-legal-license.html",
+    "verifiableCredential": {
+      "@context": ["https://www.w3.org/2018/credentials/v1"],
+      "type": ["VerifiableCredential", "WebDocument"],
+      "issuer": "did:web:fx1-docs.eu",
+      "credentialSubject": {
+        "id": "https://raitano-temmerman.github.io/bascule.html"
+      }
     }
   }
-}
 </script>
 
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "MediaObject",
-  "name": "Version PDF certifiée FX1",
-  "encodingFormat": "application/pdf",
-  "contentUrl": "https://raitano-temmerman.github.io/fx1-certification.pdf",
-  "sha256": "6632e2eafa4f6f047f873ae2dd01129599f5561d03289355a2aaefdae7101223",
-  "datePublished": "2025-06-04",
-  "inLanguage": "fr-BE"
-}
+  {
+    "@context": "https://schema.org",
+    "@type": "MediaObject",
+    "name": "Version PDF certifiée FX1",
+    "encodingFormat": "application/pdf",
+    "contentUrl": "https://raitano-temmerman.github.io/fx1-certification.pdf",
+    "sha256": "6632e2eafa4f6f047f873ae2dd01129599f5561d03289355a2aaefdae7101223",
+    "datePublished": "2025-06-04",
+    "inLanguage": "fr-BE"
+  }
 </script>
+
+<!-- Partie principale du contenu -->
+<main>
+  <!-- En-tête visuel -->
+  <section class="fx1-banner">
+    <h1 id="main-title">📘 RAITANO – FX1</h1>
+  </section>
+  <!-- Ajoute d'autres sections et contenu principal ici -->
+</main>
+
 
 
 <!-- ✅ FX1: Bloc multilingue standard – Début -->
