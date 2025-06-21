@@ -89,6 +89,40 @@ UID FX1: fx1-pj1-20250615-ultima-nl
     text-align: left;
     direction: ltr;
   }
+
+  /* Flexbox pour la mise en page */
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .sidebar {
+    background-color: #f1f5f9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    flex: 1 1 250px;
+  }
+
+  .main-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    flex: 3 1 60%;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Colonne empilée sur petits écrans */
+    }
+
+    .sidebar, .main-content {
+      flex: 1 1 100%; /* Chaque section prend toute la largeur */
+    }
+  }
 </style>
 
 <script type="application/ld+json">
@@ -186,6 +220,7 @@ UID FX1: fx1-pj1-20250615-ultima-nl
   "inLanguage": "fr-BE"
 }
 </script>
+
 
 <!-- ✅ FX1: Bloc multilingue standard – Début -->
 <nav id="lang-menu" style="background: #f8fafc; padding: 1.5em; border-radius: 12px; box-shadow: 0 0 8px rgba(0,0,0,0.05); margin-bottom: 2em; font-family: 'Segoe UI', sans-serif;">
