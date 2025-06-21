@@ -1,3 +1,10 @@
+
+
+
+
+
+
+
 <!DOCTYPE html>
 
 <!-- FX1_HEADER -->
@@ -9,6 +16,8 @@ SHA-256 vingerafdruk: e868a0d5652f04d9634650d716f44c4c9a4da993db2553a4d6f80a18db
 SHA-512 vingerafdruk: 677d9ea882c5f83db93384b0198c82f30cedeb37ab27055c3c9d4ba3970eba6fd7569dda21381137d69e0af4fa2a8fc69f1f4c1f8069a96ce5c68e0a3b31a264
 UID FX1: fx1-pj1-20250615-ultima-nl
 -->
+
+
 
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
@@ -29,240 +38,154 @@ UID FX1: fx1-pj1-20250615-ultima-nl
 <meta content="fr_BE" property="og:locale"/>
 <meta content="fx1-validation-juridique-web-rvt-20250601" name="fx1-uid"/>
 <meta content="FX1-V3.3.2plus-2025-05-30" name="version"/>
+<style>:root { --color-primary: #0057b7; --color-hover: #003b82; --color-accent: #e2f0ff; --color-text: #222; --font-family: 'Segoe UI', 'Roboto', sans-serif; } body { display: flex; margin: 0; font-family: var(--font-family); color: var(--color-text); background-color: #fff; line-height: 1.7; font-size: 1.05em; } nav { min-width: 220px; background-color: #f4f6fa; padding: 2em 1em; height: 100vh; position: sticky; top: 0; border-right: 1px solid #ccc; display: flex; flex-direction: column; gap: 1.5em; } nav strong { font-size: 1rem; color: #444; font-weight: 600; padding-bottom: 0.5em; border-bottom: 1px solid #ddd; } nav a { display: block; color: var(--color-primary); text-decoration: none; font-weight: 500; transition: all 0.2s ease-in-out; } nav a:hover { color: var(--color-hover); padding-left: 4px; } main { padding: 2.5em 4em; max-width: 960px; } header blockquote { font-style: italic; color: #444; margin: 1.5rem 0 2rem 0; padding-left: 1.25rem; border-left: 5px solid #ccc; } section { margin-bottom: 3em; } section h2 { margin-bottom: 0.4em; font-size: 1.6em; border-bottom: 2px solid var(--color-accent); padding-bottom: 0.3em; } footer { margin-top: 4em; font-size: 0.9em; text-align: center; } a { text-decoration: none; color: var(--color-primary); } a:hover { text-decoration: underline; color: var(--color-hover); } @media (max-width: 768px) { body { flex-direction: column; } nav { height: auto; position: relative; flex-direction: row; overflow-x: auto; } nav a { margin-right: 1em; } main { padding: 1.5em; } }</style>
+<meta content="/img/fx1-doc-preview.jpg" property="og:image"/><link href="/favicon.ico" rel="icon"/>
+&lt;<!-- 🔗 Canonical et hreflang -->
+<link href=".../certification.html" hreflang="fr" rel="alternate" type="text/html"/>
+<link href=".../certification-nl.html" hreflang="nl" rel="alternate" type="text/html"/>
+<link href=".../certification-en.html" hreflang="en" rel="alternate" type="text/html"/>
+<link href=".../certification-de.html" hreflang="de" rel="alternate" type="text/html"/>
+<link href=".../certification-it.html" hreflang="it" rel="alternate" type="text/html"/>
 
-<!-- Styles pour l'alignement du texte et la mise en page responsive -->
+<!-- 🧭 OpenGraph -->
+<meta content="Présentation judiciaire – Certifiée FX1 (FR)" property="og:title"/>
+<meta content="Documentation d’un litige locatif réel en Brabant flamand – FX1-certification et transparence juridique." property="og:description"/>
+<meta content="https://raitano-temmerman.github.io/Raitano-vs-Temmerman-Affaire-d-pos-e-au-parquet-et-structur-e-par-IA/certification-nl.html" property="og:url"/>
+<meta content="fr_FR" property="og:locale"/>
+<meta content="nl_NL" property="og:locale:alternate"/>
+<meta content="en_US" property="og:locale:alternate"/>
+<meta content="de_DE" property="og:locale:alternate"/>
+<meta content="it_IT" property="og:locale:alternate"/>
+<meta content="/img/fx1-preview.jpg" property="og:image"/>
+<link href="/favicon.ico" rel="icon"/>
+  <link rel="stylesheet" href="style.css" />
 <style>
-  :root {
-    --color-primary: #0057b7;
-    --color-hover: #003b82;
-    --color-accent: #e2f0ff;
-    --color-text: #222;
-    --font-family: 'Segoe UI', 'Roboto', sans-serif;
-  }
-
-  body {
-    display: flex;
-    flex-direction: column; /* Assurez-vous que la disposition est en colonne pour toute la page */
-    margin: 0;
-    font-family: var(--font-family);
-    color: var(--color-text);
-    background-color: #fff;
-    line-height: 1.7;
-    font-size: 1.05em;
-    text-align: left; /* Alignement à gauche du texte */
-    direction: ltr; /* Texte de gauche à droite */
-  }
-
-  nav {
-    min-width: 220px;
-    background-color: #f4f6fa;
-    padding: 2em 1em;
-    height: 100vh;
-    position: sticky;
-    top: 0;
-    border-right: 1px solid #ccc;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5em;
-  }
-
-  nav strong {
-    font-size: 1rem;
-    color: #444;
-    font-weight: 600;
-    padding-bottom: 0.5em;
-    border-bottom: 1px solid #ddd;
-  }
-
-  nav a {
-    display: block;
-    color: var(--color-primary);
-    text-decoration: none;
-    font-weight: 500;
-    transition: all 0.2s ease-in-out;
-  }
-
-  nav a:hover {
-    color: var(--color-hover);
-    padding-left: 4px;
-  }
-
-  main {
-    padding: 2.5em 4em;
-    max-width: 960px;
-    width: 100%;
-    flex-grow: 1; /* Garantir que le contenu principal occupe l'espace restant */
-  }
-
-  header blockquote {
-    font-style: italic;
-    color: #444;
-    margin: 1.5rem 0 2rem 0;
-    padding-left: 1.25rem;
-    border-left: 5px solid #ccc;
-  }
-
-  section {
-    margin-bottom: 3em;
-  }
-
-  section h2 {
-    margin-bottom: 0.4em;
-    font-size: 1.6em;
-    border-bottom: 2px solid var(--color-accent);
-    padding-bottom: 0.3em;
-  }
-
-  footer {
-    margin-top: 4em;
-    font-size: 0.9em;
-    text-align: center;
-  }
-
   a {
     text-decoration: none;
-    color: var(--color-primary);
+    color: #1e40af !important;
+    font-weight: 500;
   }
 
   a:hover {
-    text-decoration: underline;
-    color: var(--color-hover);
+    color: #38bdf8 !important;
   }
 
-  /* Flexbox pour la mise en page */
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
-    width: 100%;
+  a:active {
+    color: #1e3a8a !important;
   }
 
-  .sidebar {
-    background-color: #f1f5f9;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    flex: 1 1 250px;  /* Colonne de navigation (à gauche) */
+  a:visited {
+    color: #1d4ed8 !important;
   }
 
-  .main-content {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    flex: 3 1 60%; /* Contenu principal (à droite) */
+  /* Alignement du texte à gauche */
+  body {
+    text-align: left; /* Garantir que tout le texte est aligné à gauche */
+    direction: ltr; /* Définit la direction du texte de gauche à droite */
   }
 
-  /* Règles responsive pour les petits écrans */
-  @media (max-width: 768px) {
-    .container {
-      flex-direction: column; /* Empile les colonnes sur petits écrans */
-    }
-
-    .sidebar, .main-content {
-      flex: 1 1 100%; /* Chaque section prend 100% de la largeur */
-    }
+  /* Application des mêmes règles aux sections pertinentes */
+  section {
+    text-align: left;
+    direction: ltr;
   }
 </style>
 
-<!-- JSON-LD Scripts pour données structurées -->
 <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LegalDocument",
-    "name": "Validation juridique FX1 – Affaire Raitano vs Temmerman",
-    "datePublished": "2025-06-01",
-    "author": {
-      "@type": "Organization",
-      "name": "FX1 Legal Framework – GPT-4o"
-    },
-    "inLanguage": "fr",
-    "identifier": "fx1-validation-20250604"
-  }
+{
+  "@context": "https://schema.org",
+  "@type": "LegalDocument",
+  "name": "Validation juridique FX1 – Affaire Raitano vs Temmerman",
+  "datePublished": "2025-06-01",
+  "author": {
+    "@type": "Organization",
+    "name": "FX1 Legal Framework – GPT-4o"
+  },
+  "inLanguage": "fr",
+  "identifier": "fx1-validation-20250604"
+}
 </script>
 
 <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LegalDocument",
-    "name": "Validation juridique FX1 – Affaire Raitano vs Temmerman",
-    "datePublished": "2025-06-01",
-    "author": {
-      "@type": "Organization",
-      "name": "FX1 Legal Framework – GPT-4o"
-    },
-    "inLanguage": "fr",
-    "isPartOf": {
+{
+  "@context": "https://schema.org",
+  "@type": "LegalDocument",
+  "name": "Validation juridique FX1 – Affaire Raitano vs Temmerman",
+  "datePublished": "2025-06-01",
+  "author": {
+    "@type": "Organization",
+    "name": "FX1 Legal Framework – GPT-4o"
+  },
+  "inLanguage": "fr",
+  "isPartOf": {
+    "@type": "WebPage",
+    "name": "Affaire RAITANO vs TEMMERMAN",
+    "url": "https://raitano-temmerman.github.io/"
+  },
+  "identifier": "fx1-validation-juridique-web-rvt-20250601"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Affaire Raitano vs Temmerman – FX1 Documentation",
+  "author": {
+    "@type": "Person",
+    "name": "Stefan Raitano"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "FX1 Documentation",
+    "url": "https://raitano-temmerman.github.io"
+  },
+  "datePublished": "2025-06-04",
+  "inLanguage": "fr-BE",
+  "isAccessibleForFree": true,
+  "hasPart": [
+    {
       "@type": "WebPage",
-      "name": "Affaire RAITANO vs TEMMERMAN",
-      "url": "https://raitano-temmerman.github.io/"
+      "url": "https://raitano-temmerman.github.io/mediatique.html"
     },
-    "identifier": "fx1-validation-juridique-web-rvt-20250601"
-  }
-</script>
-
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "Affaire Raitano vs Temmerman – FX1 Documentation",
-    "author": {
+    {
+      "@type": "WebPage",
+      "url": "https://raitano-temmerman.github.io/fx1-certification.html"
+    }
+  ],
+  "proof": {
+    "@type": "DigitalDocumentPermission",
+    "grantee": {
       "@type": "Person",
-      "name": "Stefan Raitano"
+      "email": "stefan.raitano@fx1-docs.eu"
     },
-    "publisher": {
-      "@type": "Organization",
-      "name": "FX1 Documentation",
-      "url": "https://raitano-temmerman.github.io"
-    },
-    "datePublished": "2025-06-04",
-    "inLanguage": "fr-BE",
-    "isAccessibleForFree": true,
-    "hasPart": [
-      {
-        "@type": "WebPage",
-        "url": "https://raitano-temmerman.github.io/mediatique.html"
-      },
-      {
-        "@type": "WebPage",
-        "url": "https://raitano-temmerman.github.io/fx1-certification.html"
-      }
-    ],
-    "proof": {
-      "@type": "DigitalDocumentPermission",
-      "grantee": {
-        "@type": "Person",
-        "email": "stefan.raitano@fx1-docs.eu"
-      },
-      "validFrom": "2025-06-04T00:00:00Z",
-      "proofService": "https://fx1-verification.net/verify?doc=20250604-FX1"
-    },
-    "license": "https://raitano-temmerman.github.io/fx1-legal-license.html",
-    "verifiableCredential": {
-      "@context": ["https://www.w3.org/2018/credentials/v1"],
-      "type": ["VerifiableCredential", "WebDocument"],
-      "issuer": "did:web:fx1-docs.eu",
-      "credentialSubject": {
-        "id": "https://raitano-temmerman.github.io/bascule.html"
-      }
+    "validFrom": "2025-06-04T00:00:00Z",
+    "proofService": "https://fx1-verification.net/verify?doc=20250604-FX1"
+  },
+  "license": "https://raitano-temmerman.github.io/fx1-legal-license.html",
+  "verifiableCredential": {
+    "@context": ["https://www.w3.org/2018/credentials/v1"],
+    "type": ["VerifiableCredential", "WebDocument"],
+    "issuer": "did:web:fx1-docs.eu",
+    "credentialSubject": {
+      "id": "https://raitano-temmerman.github.io/bascule.html"
     }
   }
+}
 </script>
 
 <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "MediaObject",
-    "name": "Version PDF certifiée FX1",
-    "encodingFormat": "application/pdf",
-    "contentUrl": "https://raitano-temmerman.github.io/fx1-certification.pdf",
-    "sha256": "6632e2eafa4f6f047f873ae2dd01129599f5561d03289355a2aaefdae7101223",
-    "datePublished": "2025-06-04",
-    "inLanguage": "fr-BE"
-  }
+{
+  "@context": "https://schema.org",
+  "@type": "MediaObject",
+  "name": "Version PDF certifiée FX1",
+  "encodingFormat": "application/pdf",
+  "contentUrl": "https://raitano-temmerman.github.io/fx1-certification.pdf",
+  "sha256": "6632e2eafa4f6f047f873ae2dd01129599f5561d03289355a2aaefdae7101223",
+  "datePublished": "2025-06-04",
+  "inLanguage": "fr-BE"
+}
 </script>
-
 
 <!-- ✅ FX1: Bloc multilingue standard – Début -->
 <nav id="lang-menu" style="background: #f8fafc; padding: 1.5em; border-radius: 12px; box-shadow: 0 0 8px rgba(0,0,0,0.05); margin-bottom: 2em; font-family: 'Segoe UI', sans-serif;">
