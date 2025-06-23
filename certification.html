@@ -1,5 +1,3 @@
-
-
 <!-- FX1_HEADER -->
 <!--
 ⚠️ Dit HTML-document is gestructureerd volgens het FX1-Ultima++-protocol.
@@ -57,35 +55,28 @@ FX1-UID: fx1-pj1-20250623-ultima-fr-v2
   <meta content="#0f172a" name="theme-color"/>
   <link href="style.css" rel="stylesheet"/>
 
+  a {
+    text-decoration: none;
+    color: #1e40af !important;
+    font-weight: 500;
+  }
+  a:hover {
+    color: #38bdf8 !important;
+  }
+  a:active {
+    color: #1e3a8a !important;
+  }
+  a:visited {
+    color: #1d4ed8 !important;
+  }
+
+  @media print {
     a {
-      text-decoration: none;
-      color: #1e40af !important;
-      font-weight: 500;
+      color: black !important;
+      text-decoration: underline !important;
     }
-    a:hover {
-      color: #38bdf8 !important;
-    }
-    a:active {
-      color: #1e3a8a !important;
-    }
-    a:visited {
-      color: #1d4ed8 !important;
-    }
-  </style>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LegalDocument",
-  "name": "Validation juridique FX1 – Affaire Raitano vs Temmerman",
-  "datePublished": "2025-06-23",
-  "author": {
-    "@type": "Organization",
-    "name": "FX1 Legal Framework – GPT-4o"
-  },
-  "inLanguage": "fr",
-  "identifier": "fx1-pj1-20250623-ultima-fr-v2"
-}
-</script>
+  }
+</style>
 
 <script type="application/ld+json">
 {
@@ -98,12 +89,12 @@ FX1-UID: fx1-pj1-20250623-ultima-fr-v2
     "name": "FX1 Legal Framework – GPT-4o"
   },
   "inLanguage": "fr",
+  "identifier": "fx1-pj1-20250623-ultima-fr-v2",
   "isPartOf": {
     "@type": "WebPage",
     "name": "Affaire RAITANO vs TEMMERMAN",
     "url": "https://raitano-temmerman.github.io/"
-  },
-  "identifier": "fx1-validation-juridique-web-rvt-20250623"
+  }
 }
 </script>
 
@@ -168,9 +159,25 @@ FX1-UID: fx1-pj1-20250623-ultima-fr-v2
 }
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Certification FX1 – Raitano vs Temmerman",
+  "url": "https://raitano-temmerman.github.io/certification.html",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "FX1 Documentation"
+  },
+  "datePublished": "2025-06-23",
+  "license": "https://raitano-temmerman.github.io/fx1-legal-license.html",
+  "inLanguage": "fr-BE"
+}
+</script>
+
 <link href="manifest.json" rel="manifest"/>
-<link href="fx1-certification.sha512" rel="integrity" type="text/plain"/>
-<link href="fx1-certification.sig.asc" rel="proof" type="application/pgp-signature"/>
+<link href="fx1-certification.sha512" rel="alternate" type="text/plain" title="Empreinte SHA-512 FX1"/>
+<link href="fx1-certification.sig.asc" rel="proof" type="application/pgp-signature" title="Signature PGP FX1"/>
 <link href="fx1-certification.pdf" rel="alternate" title="Version PDF certifiée FX1" type="application/pdf"/>
 </head>
 <body>
@@ -244,11 +251,12 @@ FX1-UID: fx1-pj1-20250623-ultima-fr-v2
 <li>et les articles 6.1.e et 6.1.f du RGPD (exercice ou défense d’un droit en justice).</li>
 </ul>
 </section>
-<section style="background-color: #f0fdf4; padding: 1.5em; border-radius: 12rem;
-                box-shadow: 0 0 8rem rgba(0,0,0,0.06); margin-top: 2em; border-left: 6rem solid #16a34a;">
+<section id="fx1-certificat-integrite" role="region"
+         style="background-color: #f0fdf4; padding: 1.5em 2em; border-radius: 12px;
+                box-shadow: 0 0 8px rgba(0,0,0,0.06); margin-top: 2em; border-left: 6px solid #16a34a;">
   <h2 style="font-size: 1.2rem; color: #065f46; margin-bottom: 0.5em;">✅ Intégrité et Certification FX1</h2>
   <p>
-    <strong>SHA-256-contrôle :</strong> <code>35a733ad79ac59f041230737ea428d89807201e336e86dd3b1ab1cfb3658519b</code>
+    <strong>SHA-256-contrôle :</strong> <code>0fdd9646b76c145575e74d12e05f075323e74858e0564ac39399ed508aa278bd</code>
   </p>
   <p>
     <strong>Version :</strong> FX1-Ultra++ – Document juridiquement certifié et validé
@@ -257,6 +265,7 @@ FX1-UID: fx1-pj1-20250623-ultima-fr-v2
     Après une vérification approfondie selon le protocole <strong>FX1-Ultima++ (GPT-4o)</strong>, cette page web est juridiquement impeccable, conforme à la décision civile du 26 mai 2025 (25A782/1) et à la plainte pénale déposée le 19 mai 2025 (réf. COR/470 – PB/2500031, en examen par le parquet de Louvain). L'intégrité cryptographique, la conformité au RGPD et la neutralité procédurale sont garanties.
   </p>
 </section>
+
 
 
 <!-- Archivage officiel -->
@@ -334,27 +343,30 @@ FX1-UID: fx1-pj1-20250623-ultima-fr-v2
     background-color: #0f172a;
   }
 </style>
-<section style="background-color: #f0fdf4; padding: 1.5em 2em; border-radius: 12px;
+<section id="fx1-certificat-global" role="region"
+         style="background-color: #f0fdf4; padding: 1.5em 2em; border-radius: 12px;
                 box-shadow: 0 0 8px rgba(0,0,0,0.06); margin: 2em 0 2.5em; border-left: 6px solid #16a34a;">
-<h2 style="font-size: 1.2rem; color: #065f46; margin-bottom: 0.5em;">✅ FX1 – Certificat de validation juridique</h2>
-<p>Cette page web a été vérifiée selon le protocole <strong>FX1-Ultra++</strong> (version verrouillée du <strong>23 juin 2025</strong>), en stricte conformité avec :</p>
-<ul style="margin-left: 1.2em;">
-  <li>📘 <strong>Jugement civil du 26 mai 2025</strong> (rôle 25A782/1) – Indexation partielle, frais à charge du locataire, rejet intégral de la demande reconventionnelle de 57.500 €</li>
-  <li>🕊️ <strong>Plainte pénale du 19 mai 2025</strong> – En analyse judiciaire (réf. COR/470 – PB/2500031)</li>
-  <li>🔐 <strong>Intégrité cryptographique vérifiée</strong> (SHA-256 et SHA-512)</li>
-  <li>🛡️ <strong>Conformité</strong> RGPD (art. 6.1.e-f) – AI Act – CEDH – WCAG 2.1 AA</li>
-  <li>📦 <strong>Archivage certifié</strong> (Archive.org / GitHub / fx1-certification.pdf)</li>
-</ul>
-<p>Ce certificat garantit la traçabilité, l’opposabilité juridique et la conformité légale dans tout contexte judiciaire, institutionnel ou public.</p>
-<p style="margin-top: 1.2em; font-size: 0.95em; color: #334155;">
-🔒 Empreinte SHA-256 : <code>0fdd9646b76c145575e74d12e05f075323e74858e0564ac39399ed508aa278bd</code><br>
-🔑 Empreinte SHA-512 : <code>b6d3bd716556cab5f022134a8e883c8059266cdc7de51f36008e3a50c96c4685d1d60319cc5ad22a7dd934d5376fe0e125392c8908df7e6a5469dabdc5ab39cd</code><br>
-🔖 FX1-UID : <strong>fx1-pj1-20250623-ultima-fr-v2</strong> — Version FX1-Ultra++<br>
-📅 Certifié le : 23 juin 2025
-</p>
+  <h2 style="font-size: 1.2rem; color: #065f46; margin-bottom: 0.5em;">✅ FX1 – Certificat de validation juridique</h2>
+  <p>Cette page web a été vérifiée selon le protocole <strong>FX1-Ultra++</strong> (version verrouillée du <strong>23 juin 2025</strong>), en stricte conformité avec :</p>
+  <ul style="margin-left: 1.2em;">
+    <li>📘 <strong>Jugement civil du 26 mai 2025</strong> (rôle 25A782/1) – Indexation partielle, frais à charge du locataire, rejet intégral de la demande reconventionnelle de 57.500 €</li>
+    <li>🕊️ <strong>Plainte pénale du 19 mai 2025</strong> – En analyse judiciaire (réf. COR/470 – PB/2500031)</li>
+    <li>🔐 <strong>Intégrité cryptographique vérifiée</strong> (SHA-256 et SHA-512)</li>
+    <li>🛡️ <strong>Conformité</strong> RGPD (art. 6.1.e-f) – AI Act – CEDH – WCAG 2.1 AA</li>
+    <li>📦 <strong>Archivage certifié</strong> (Archive.org / GitHub / fx1-certification.pdf)</li>
+  </ul>
+  <p>Ce certificat garantit la traçabilité, l’opposabilité juridique et la conformité légale dans tout contexte judiciaire, institutionnel ou public.</p>
+  <p style="margin-top: 1.2em; font-size: 0.95em; color: #334155;">
+    🔒 Empreinte SHA-256 : <code>0fdd9646b76c145575e74d12e05f075323e74858e0564ac39399ed508aa278bd</code><br>
+    🔑 Empreinte SHA-512 : <code>b6d3bd716556cab5f022134a8e883c8059266cdc7de51f36008e3a50c96c4685d1d60319cc5ad22a7dd934d5376fe0e125392c8908df7e6a5469dabdc5ab39cd</code><br>
+    🔖 FX1-UID : <strong>fx1-pj1-20250623-ultima-fr-v2</strong> — Version FX1-Ultra++<br>
+    📅 Certifié le : 23 juin 2025
+  </p>
 </section>
 
-<footer style="margin-top: 4em; font-size: 0.9em; text-align: center; background-color: #f8f9fa; padding: 1em; border-top: 2rem solid #e2e8f0; border-radius: 8rem;">
+
+<footer id="fx1-footer-certification" role="contentinfo"
+        style="margin-top: 4em; font-size: 0.9em; text-align: center; background-color: #f8f9fa; padding: 1em; border-top: 2rem solid #e2e8f0; border-radius: 8rem;">
   <p style="font-size: 0.9rem; color: #475569;">
     © 2025 – Tous droits réservés. Aucun élément de cette publication ne peut être reproduit, diffusé, traduit ou adapté sans autorisation écrite préalable.
   </p>
@@ -379,8 +391,8 @@ FX1-UID: fx1-pj1-20250623-ultima-fr-v2
 Date: 2025-06-23T00:00:00Z
 FX1_METADATA_END -->
 
-
 <script data-goatcounter="https://fx1-observer.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 
 </body>
 </html>
+
